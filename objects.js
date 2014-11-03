@@ -52,6 +52,20 @@ function Fruit (theColor, theSweetness, theFruitName, theNativeToLand) {
        console.log("Grown in:" + eachCountry);
         });
     }
+}
+
+---------------------------------------------------------------------------------------
+
+An inherited property is defined on the object’s prototype property. Meaning, an object will inherit a new property based on the prototype method passed for that object. For example: someObject.prototype.firstName = “rich”;
+
+---------------------------------------------------------------------------------------
+
+Examples of methods using object prototype inheritance.
+
+Fruit.prototype.showName = function () {
+console.log("This is a " + this.fruitName);
+}
 ​
-​
+Fruit.prototype.nativeTo = function () {
+            console.log("Grown in:" + this.nativeToLand);
 }
