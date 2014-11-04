@@ -109,3 +109,11 @@ console.log(person.name); // Bryant
  when we changed the person.name property to “Bryant” the anotherPerson reflected the change because it never stored an actual copy of it’s own value of the person’s properties, it only had a reference to it.
 
  -------------------------------------------------------------------------------------
+
+ 3 Attributes of Object Data Properties
+
+ These 3 are set to true by default
+
+ -Configurable attribute: whether property can be deleted or changed
+ -Enumerable: whether the property can be returned in a for/in loop
+ -Writable: Whether the property can be changed
