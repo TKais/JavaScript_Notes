@@ -58,6 +58,8 @@ function Fruit (theColor, theSweetness, theFruitName, theNativeToLand) {
     }
 }
 
+*This allows for many fruits to be made off of one object model instead of creating various different fruits with the same properties. 
+
 ---------------------------------------------------------------------------------------
 
 An inherited property is defined on the object’s prototype property. Meaning, an object will inherit a new property based on the prototype method passed for that object. For example: someObject.prototype.firstName = “rich”;
