@@ -77,3 +77,17 @@ console.log("This is a " + this.fruitName);
 Fruit.prototype.nativeTo = function () {
             console.log("Grown in:" + this.nativeToLand);
 }
+---------------------------------------------------------------------------------------
+
+Primitive Data Types
+
+These are stored directly on the variable, where reference data types are not. 
+
+EX)
+// The primitive data type String is stored as a value​
+var person = "Kobe";  
+​var anotherPerson = person; // anotherPerson = the value of person​
+person = "Bryant"; // value of person changed​
+​
+console.log(anotherPerson); // Kobe​
+console.log(person); // Bryant
