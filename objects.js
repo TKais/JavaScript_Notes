@@ -38,7 +38,7 @@ console.log("Hmm Hmm Good");
 
 *Constructors use 'function object' NOT equal to but has a hash of key-value pairs following it. Each key must be bound to the object, so use 'this'.
 
----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 
 Constructor Pattern for Creating Objects
 
@@ -62,11 +62,11 @@ function Fruit (theColor, theSweetness, theFruitName, theNativeToLand) {
 
 *This allows for many fruits to be made off of one object model instead of creating various different fruits with the same properties. 
 
----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 
 An inherited property is defined on the object’s prototype property. Meaning, an object will inherit a new property based on the prototype method passed for that object. For example: someObject.prototype.firstName = “rich”;
 
----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 
 Examples of methods using object prototype inheritance.
 
@@ -77,7 +77,7 @@ console.log("This is a " + this.fruitName);
 Fruit.prototype.nativeTo = function () {
             console.log("Grown in:" + this.nativeToLand);
 }
----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 
 Primitive Data Types
 
@@ -92,7 +92,7 @@ person = "Bryant"; // value of person changed​
 console.log(anotherPerson); // Kobe​
 console.log(person); // Bryant
 
----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 
 Reference Data Types
 
@@ -105,3 +105,7 @@ person.name = "Bryant";
 ​
 console.log(anotherPerson.name); // Bryant​
 console.log(person.name); // Bryant
+
+ when we changed the person.name property to “Bryant” the anotherPerson reflected the change because it never stored an actual copy of it’s own value of the person’s properties, it only had a reference to it.
+
+ -------------------------------------------------------------------------------------
