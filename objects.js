@@ -61,6 +61,18 @@ function Fruit (theColor, theSweetness, theFruitName, theNativeToLand) {
 }
 
 *This allows for many fruits to be made off of one object model instead of creating various different fruits with the same properties. 
+NOW you can make this:
+
+
+var mangoFruit = new Fruit ("Yellow", 8, "Mango", ["South America", "Central America", "West Africa"]);
+mangoFruit.showName(); // This is a Mango.​
+mangoFruit.nativeTo();
+​//Grown in:South America​
+​// Grown in:Central America​
+​// Grown in:West Africa​
+​
+​var pineappleFruit = new Fruit ("Brown", 5, "Pineapple", ["United States"]);
+pineappleFruit.showName(); // This is a Pineapple.
 
 --------------------------------------------------------------------------------------
 
