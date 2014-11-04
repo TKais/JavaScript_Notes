@@ -1,6 +1,8 @@
 An object is an unordered list of primitive data (and sometimes reference data types) types that are stored as name-value pairs
 
 ---------------------------------------------------------------------------------
+JavaScript has one complex data type, the Object data type, and it has five simple data types: Number, String, Boolean, Undefined, and Null. Note that these simple (primitive) data types are immutable, they cannot be changed, while objects are mutable.
+-----------------------------------------------------------------------------------
 
 Object Literals
 
