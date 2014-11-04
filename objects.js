@@ -18,6 +18,8 @@ console.log("Hmm Hmm Good");
 }
 }
 
+*Object literals use 'var object' that is equal to a hash of key-value pairs.
+
 -------------------------------------------------------------------------------------
 
 Object Constructor
@@ -31,6 +33,8 @@ mango.sweetness = 8;
 mango.howSweetAmI = function () {
 console.log("Hmm Hmm Good");
 }
+
+*Constructors use 'function object' NOT equal to but has a hash of key-value pairs following it. Each key must be bound to the object, so use 'this'.
 
 ---------------------------------------------------------------------------------------
 
