@@ -91,3 +91,17 @@ person = "Bryant"; // value of person changed​
 ​
 console.log(anotherPerson); // Kobe​
 console.log(person); // Bryant
+
+---------------------------------------------------------------------------------------
+
+Reference Data Types
+
+Not stored directly on the variable as a value -- just as reference.
+
+EX)
+var person = {name: "Kobe"};
+​var anotherPerson = person;
+person.name = "Bryant";
+​
+console.log(anotherPerson.name); // Bryant​
+console.log(person.name); // Bryant
