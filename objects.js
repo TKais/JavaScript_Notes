@@ -203,4 +203,9 @@ newObj.print(); //I am a new object and I can print
 EX)
 newObj‘s prototype is PrintStuff.prototype
 
+(More on prototypes in prototypes.js)
+
+---------------------------------------------------------------------------------------------------------
+
+
 
