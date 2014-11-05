@@ -1,4 +1,4 @@
-An object is an unordered list of primitive data (and sometimes reference data types) types that are stored as name-value pairs
+An object is an unordered list of primitive data (and sometimes reference data types) types that are stored as name-value pairs. A property is simply a variable defined on a function. 
 
 ---------------------------------------------------------------------------------
 JavaScript has one complex data type, the Object data type, and it has five simple data types: Number, String, Boolean, Undefined, and Null. Note that these simple (primitive) data types are immutable, they cannot be changed, while objects are mutable.
@@ -176,3 +176,9 @@ console.log(eachItem); // Prints schoolName, schoolAccredited, schoolLocation​
 
 
 *Properties inherited from Object.prototype are not enumerable, so the for/in loop does not show them
+
+------------------------------------------------------------------------------------------------------
+
+OBJECT PROTOTYPE ATTRIBUTE VS PROTOTYPE PROPERTY 
+
+
