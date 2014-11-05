@@ -152,4 +152,18 @@ console.log(person.name); // Bryant
 
  Important to know because from time to time you need to enumerate an object and you want only the own properties, not the inherited ones
 
- 
+ EX) 
+Find out if property exists on an object (own or inherited):
+
+var school = {schoolName: "MIT"};
+console.log("schoolName" in school); //true
+console.log("schoolType" in school); //false
+
+EX)
+Find out if object has an own property only:
+
+var school = {schoolName: "MIT"};
+console.log(school.hasOwnProperty("schoolName")); //true
+console.log(school.hasOwnProperty("toString")); //false
+
+
