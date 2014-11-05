@@ -129,3 +129,18 @@ console.log(person.name); // Bryant
  -Configurable attribute: whether property can be deleted or changed
  -Enumerable: whether the property can be returned in a for/in loop
  -Writable: Whether the property can be changed
+
+ ----------------------------------------------------------------------------------------
+
+ Access an objects properties through dot or bracket notation:
+
+ DOT
+
+ var chocolate = new Cookie();
+ chocolate.cookTime = 24;
+
+ BRACKET
+
+ chocolate["cookTime"]
+
+ ------------------------------------------------------------------------------------------
