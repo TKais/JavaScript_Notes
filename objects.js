@@ -174,3 +174,5 @@ var school = {schoolName:"MIT", schoolAccredited: true, schoolLocation:"Massachu
 console.log(eachItem); // Prints schoolName, schoolAccredited, schoolLocation​
 ​}
 
+
+*Properties inherited from Object.prototype are not enumerable, so the for/in loop does not show them
