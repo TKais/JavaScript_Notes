@@ -194,6 +194,9 @@ PrintStuff.prototype.print = function() {
 
 var newObj = new PrintStuff("I am a new object and I can print"); 
 
-newObj.print(); //I am a new object and I can print 
+newObj.print(); //I am a new object and I can print
+
+
+*Prototype Attribute = Points to the objects parent (or the object it inherited its properties from). Its set automatically when you create a new object, and is referred to as the "prototype object". 
 
 
