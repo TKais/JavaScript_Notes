@@ -181,4 +181,6 @@ console.log(eachItem); // Prints schoolName, schoolAccredited, schoolLocation​
 
 OBJECT PROTOTYPE ATTRIBUTE VS PROTOTYPE PROPERTY 
 
+*Prototype Property = Every JavaScript function has it, and its empty by default. Attach properties and methods to this prototype property when you want to implement inheritance. Its not enumerable and cannot be accessed in a for/in loop. 
+
 
