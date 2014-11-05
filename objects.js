@@ -198,5 +198,9 @@ newObj.print(); //I am a new object and I can print
 
 
 *Prototype Attribute = Points to the objects parent (or the object it inherited its properties from). Its set automatically when you create a new object, and is referred to as the "prototype object". 
+     You can think of the prototype attribute as the lineage or the parent).  
+
+EX)
+newObj‘s prototype is PrintStuff.prototype
 
 
