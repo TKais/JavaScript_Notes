@@ -183,4 +183,17 @@ OBJECT PROTOTYPE ATTRIBUTE VS PROTOTYPE PROPERTY
 
 *Prototype Property = Every JavaScript function has it, and its empty by default. Attach properties and methods to this prototype property when you want to implement inheritance. Its not enumerable and cannot be accessed in a for/in loop. 
 
+EX)
+function PrintStuff(myDocuments){
+    this.documents = myDocuments;
+}
+
+PrintStuff.prototype.print = function() {
+    console.log(this.documents);
+}
+
+var newObj = new PrintStuff("I am a new object and I can print"); 
+
+newObj.print(); //I am a new object and I can print 
+
 
