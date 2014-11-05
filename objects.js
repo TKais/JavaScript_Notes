@@ -167,3 +167,10 @@ console.log(school.hasOwnProperty("schoolName")); //true
 console.log(school.hasOwnProperty("toString")); //false
 
 
+*You can access and enumerate properties on objects (both own and inherited) with a for/in loop. 
+EX)
+var school = {schoolName:"MIT", schoolAccredited: true, schoolLocation:"Massachusetts"};
+​for (var eachItem in school) {
+console.log(eachItem); // Prints schoolName, schoolAccredited, schoolLocation​
+​}
+
