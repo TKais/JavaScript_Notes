@@ -144,3 +144,12 @@ console.log(person.name); // Bryant
  chocolate["cookTime"]
 
  ------------------------------------------------------------------------------------------
+
+ OWN VS INHERITED PROPERTIES
+
+ Own = properties that were defined when the object was created
+ Inherited = properties inherited from the objects prototype object
+
+ Important to know because from time to time you need to enumerate an object and you want only the own properties, not the inherited ones
+
+ 
