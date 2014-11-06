@@ -207,5 +207,12 @@ newObj‘s prototype is PrintStuff.prototype
 
 ---------------------------------------------------------------------------------------------------------
 
+DELETING AN OBJECTS PROPERTIES 
+
+-You cant delete inherited properties (unless you delete the inherited properties on the prototype object where they were defined), those set to configurable or global objects defined with the var keyword.
+
+
+
+
 
 
