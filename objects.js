@@ -247,3 +247,17 @@ console.log(school.hasOwnProperty("educationLevel2"));//false
 console.log(school.educationLevel2); //University 2
 delete school.educationLevel2 //returns true even if it's not able to be deleted because it's not owned
 console.log(school.educationLevel2) //Univeristy 2 ... it's still there!
+
+---------------------------------------------------------------------------------------------------------
+
+SERIALIZE AND DESERIALIZE OBJECTS 
+
+*Serialize means to just convert your object to a string, for the purposes of transferring them via HTTP or just converting it to a string. 
+
+Use JSON.stringify() to serialize an object
+
+*Deserialize means to convert the string back into an object.
+
+
+
+
