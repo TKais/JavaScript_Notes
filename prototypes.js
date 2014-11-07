@@ -54,3 +54,6 @@ TWO MAIN CONCEPTS IN PROTOTYPES
   }
 
   var userAccount = new Account() // userAccount initialized with the Account () constructor and as such its prototype attribute (or prototype object) is Account.prototype
+
+  var myArray = new Array() //gets its prototype from Array.prototype and inherits Array.prototypes properties
+
