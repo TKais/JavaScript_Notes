@@ -32,5 +32,8 @@ TWO MAIN CONCEPTS IN PROTOTYPES
    -All objects have attributes just like all object properties have attributes / object attributes are prototype, class, and extensible attributes. 
 
 --------------------------------------------------------------------------------------------
+ PROTOTYPE ATTRIBUTE OF OBJECTS CREATED WITH new Object() OR OBJECT LITERAL
 
+   -All objects created with object literals and object constructors inherits from Object.prototype
+   -So, Object.prototype is the prototype attribute (or prototype object) of all objects created with new Object() or {}. Object.prototype doesnt inherit from anyone. Its the king.  
 
