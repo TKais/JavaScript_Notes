@@ -234,4 +234,9 @@ for(var eachItem in school){
     console.log(eachItem); //Prints educationLevel, schoolName, schoolAccredited, schoolLocation
 }
 
+//A new instance of HigherLearning must inherit the educationLevel property in order to change it. Cannot be changed otherwise
+
+console.log(school.hasOwnProperty("educationLevel")); //true
+delete school.educationLevel //true
+console.log(school.educationLevel) //undefined because it's deleted
 
