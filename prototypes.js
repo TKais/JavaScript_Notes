@@ -17,3 +17,15 @@ TWO MAIN CONCEPTS IN PROTOTYPES
    PrintStuff.prototype.print = function(){
     console.log(this.documents);
    }
+
+   //create new object with PrintStuff() constructor, allowing new objects to inherit PrintStuff's properties and methods
+   var newObj = new PrintStuff("This is a new document that represents myDocuments");
+   newObj.print(); //This is a new document that represents myDocuments
+
+2) Prototype Attribute = 
+   -A characteristic of the object
+   -Tells us the objects parent (who it inherited properties from)
+   -Referred to as the 'prototype object'
+   -Automatically set when you create a new object
+   -Every object inherits properties from some other object
+   -newObjs prototype is the PrintStuff prototype 
