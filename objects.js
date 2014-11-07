@@ -240,3 +240,10 @@ console.log(school.hasOwnProperty("educationLevel")); //true
 delete school.educationLevel //true
 console.log(school.educationLevel) //undefined because it's deleted
 
+//But if educationLevel was created on HigherLearning's prototype property, it wouldn't be deleted because it's now inherited.
+
+HigherLearning.prototype.educationLevel2 = "University 2";
+console.log(school.hasOwnProperty("educationLevel2"));//false
+console.log(school.educationLevel2); //University 2
+delete school.educationLevel2 //returns true even if it's not able to be deleted because it's not owned
+console.log(school.educationLevel2) //Univeristy 2 ... it's still there!
