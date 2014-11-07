@@ -211,8 +211,27 @@ DELETING AN OBJECTS PROPERTIES
 
 -You cant delete inherited properties (unless you delete the inherited properties on the prototype object where they were defined), those set to configurable or global objects defined with the var keyword.
 
+EX)
+var christmasList = {mike: "Book", jason: "Sweater"}
+delete christmasList.mike;
 
+for(var people in christmasList){
+    console.log(people);
+}
 
+//only prints out jason; was deleted because the property is owned by the object
 
+function HigherLearning() {
+    this.educationLevel = "University";
+}
+
+var school = new HigherLearning();
+school.schoolName = "MIT";
+school.schoolAccredited = true;
+school.schoolLocation = "Massachusetts";
+
+for(var eachItem in school){
+    console.log(eachItem); //Prints educationLevel, schoolName, schoolAccredited, schoolLocation
+}
 
 
