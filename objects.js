@@ -262,5 +262,13 @@ EX)
 var christmasList = {mike: "Book", jason: "sweater", chelsea: "iPad"}
 JSON.stringify(christmasList); //"{"mike": "Book", "jason": "sweater", "chelsea": "iPad"}"
 
+christmasList is now a JSON string and cannot be accessed via dot notation like christmasList.mike. 
+Use JSON.parse to make it an object again.
+
+var christmasListStr = '{"mike":"Book","jason":"sweater","chels":"iPad"}';
+​var christmasListObj = JSON.parse (christmasListStr); 
+
+Now we can use dot notation again
+
 
 
