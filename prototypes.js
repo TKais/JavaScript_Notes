@@ -42,3 +42,10 @@ TWO MAIN CONCEPTS IN PROTOTYPES
    //same as this
    var userAccount = {name: "Mike"}; 
 
+--------------------------------------------------------------------------------------------
+ 
+ PROTOTYPE ATTRIBUTE OF OBJECTS CREATED WITH CONSTRUCTOR FUNCTION 
+
+   -Objects created with the new keyword and any constructor other than the Object ()constructor, get their prototype from the constructor function.
+
+
