@@ -258,6 +258,9 @@ Use JSON.stringify() to serialize an object
 
 *Deserialize means to convert the string back into an object.
 
+EX)
+var christmasList = {mike: "Book", jason: "sweater", chelsea: "iPad"}
+JSON.stringify(christmasList); //"{"mike": "Book", "jason": "sweater", "chelsea": "iPad"}"
 
 
 
