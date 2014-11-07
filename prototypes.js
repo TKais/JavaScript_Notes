@@ -29,3 +29,7 @@ TWO MAIN CONCEPTS IN PROTOTYPES
    -Automatically set when you create a new object
    -Every object inherits properties from some other object
    -newObjs prototype is the PrintStuff prototype 
+   -All objects have attributes just like all object properties have attributes / object attributes are prototype, class, and extensible attributes. 
+
+--------------------------------------------------------------------------------------------------------------------------
+
