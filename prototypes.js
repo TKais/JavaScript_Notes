@@ -48,4 +48,9 @@ TWO MAIN CONCEPTS IN PROTOTYPES
 
    -Objects created with the new keyword and any constructor other than the Object ()constructor, get their prototype from the constructor function.
 
+  EX)
+  function Account() {
 
+  }
+
+  var userAccount = new Account() // userAccount initialized with the Account () constructor and as such its prototype attribute (or prototype object) is Account.prototype
