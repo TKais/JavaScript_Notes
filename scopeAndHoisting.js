@@ -25,7 +25,7 @@ console.log(name) //Tiff
 
 *Always declare your local variables with a var keyword!!! Else, theyre global.
 
-var name = "Richard"; //local variable name
+var name = "Richard"; //global variable name because it's outside of the function, but var declares it
 if(name){
   name = "Jack"; //global variable name overrides the local
   console.log(name);
@@ -57,6 +57,23 @@ showCelebrityName (); // Johnny Evers​
   var name = "Johnny Evers"; // Now name is always a local variable and it will not overwrite the global variable​
   console.log (name);
 }
+
+
+*Local Variables Have Priority Over Global Variables in Functions
+If you declare a global variable and a local variable with the same name, the local variable will have priority when you attempt to use the variable inside a function (local scope).
+
+EX)
+var name = "Paul"; //global scope
+​
+​function users () {
+​var name = "Jack";  // Here, the name variable is local and it takes precedence over the same name variable in the global scope​
+​
+​// The search for name starts right here inside the function before it attempts to look outside the function in the global scope​
+console.log (name); 
+}
+​
+users (); // Jack
+
 
 
 2 - Global
