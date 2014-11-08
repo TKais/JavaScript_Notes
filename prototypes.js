@@ -57,3 +57,15 @@ TWO MAIN CONCEPTS IN PROTOTYPES
 
   var myArray = new Array() //gets its prototype from Array.prototype and inherits Array.prototypes properties
 
+  ------------------------------------------------------------------------------------------
+
+  TWO WAYS AN OBJECTS PROTOTYPE ATTRIBUTE IS SET WHEN OBJECT IS CREATED
+
+  1) If created with an object literal, it inherits properties from Object.prototype and its prototype object/attribute is Object.prototype.
+    var newObj = {}; //Object.prototype
+
+  2) If created with a constructor function (with 'new' keyword) it inherits from that constructor. 
+    function Fruit() { this.type = type; this.color = color;}
+    var watermelon = new Fruit();
+    //Fruit.prototype
+
