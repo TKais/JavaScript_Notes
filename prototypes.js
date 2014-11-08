@@ -39,7 +39,7 @@ var myFriends = {name: "Pete"};
 console.log(myFriends.name); //will find name directly on the object and return "Pete"
 
 
--All objects in JavaScript inherit properties and methods from Object.prototype. These inherited properties and methods are constructor, hasOwnProperty (), isPrototypeOf (), propertyIsEnumerable (), toLocaleString (), toString (), and valueOf (). ECMAScript 5 also adds 4 accessor methods to Object.prototype.
+-All objects in JavaScript inherit properties and methods from Object.prototype. These inherited properties and methods are constructor, hasOwnProperty (), isPrototypeOf (), propertyIsEnumerable (), toLocaleString (), toString (), and valueOf (). 
 
 EX)
 function People(){
@@ -53,6 +53,8 @@ famousPerson.superstar = "Steve Jobs";
 console.log (famousPerson.superstar); // Steve Jobs​
 console.log (famousPerson.athlete); // Tiger Woods​
 console.log (famousPerson.toString()); // [object Object]
+
+-All built-in constructors (Array (), Number (), String (), etc.) were created from the Object constructor, and as such their prototype is Object.prototype
 
 ------------------------------------------------------------------------------------------
 
