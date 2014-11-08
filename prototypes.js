@@ -1,3 +1,37 @@
+WHY IS PROTOTYPE IMPORTANT IN JAVASCRIPT? 
+
+-Prototype is needed because JavaScript doesnt have classical inheritence based on classes like Ruby. 
+-All inheritence is made possible through the prototype property in JavaScript.
+
+EX)
+function Plant(){
+  this.country = "Mexico";
+  this.isOrganic = true;
+}
+
+Plant.prototype.showNameAndColor = function() {
+  console.log("I am a " + this.name + " and my color is " + this.color);
+}
+
+Plant.prototype.amIOrganic = function() {
+  if(this.isOrganic === true) {
+    console.log("I am organic");
+  }
+}
+
+function Fruit(fruitName, fruitColor) {
+  this.name = fruitName;
+  this.color = fruitColor;
+}
+
+Fruit.prototype = new Plant();
+var banana = new Fruit("Banana", "yellow");
+console.log(banana.name); //banana
+console.log(banana.showNameAndColor());//// I am a Banana and my color is yellow
+
+This is the prototype chain! bananas prototype object is Fruit.prototype and Fruit inherited from Plant.prototype.
+--------------------------------------------------------------------------------------------
+
 TWO MAIN CONCEPTS IN PROTOTYPES
 
 1) Prototype Property = 
