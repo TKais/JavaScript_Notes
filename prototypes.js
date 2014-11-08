@@ -4,6 +4,7 @@ WHY IS PROTOTYPE IMPORTANT IN JAVASCRIPT?
 -All inheritence is made possible through the prototype property in JavaScript.
 -Prototype is also important because it helps access properties and methods of objects. Thats where prototype attributes come in.
 - .This is loosely analogous to the way you might inherit your surname from your father—he is your “prototype parent.” If we wanted to find out where your surname came from, we would first check to see if you created it yourself; if not, the search will move to your prototype parent to see if you inherited it from him. If it was not created by him, the search continues to his father (your father’s prototype parent).
+-JavaScript will look through the prototype chain to find an objects properties. If it doesnt belong to the object, it will look to the prototype object. If it doesnt belong there, itll go to that objects prototype object. Itll keep going until there arent anymore prototype objects/attributes, then return "undefined".  
 
 EX)
 function Plant(){
