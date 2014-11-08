@@ -23,8 +23,15 @@ function showName(){
 
 console.log(name) //Tiff
 
-*Always declare your local variables with a var keyword!!! Else, their global.
+*Always declare your local variables with a var keyword!!! Else, theyre global.
 
+var name = "Richard"; //local variable name
+if(name){
+  name = "Jack"; //global variable name overrides the local
+  console.log(name);
+}
+
+console.log(name); // Jack
 
 
 2 - Global
