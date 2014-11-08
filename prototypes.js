@@ -34,6 +34,11 @@ console.log(banana.showNameAndColor());//// I am a Banana and my color is yellow
 
 This is the prototype chain! bananas prototype object is Fruit.prototype and Fruit inherited from Plant.prototype.
 
+EX)
+var myFriends = {name: "Pete"};
+console.log(myFriends.name); //will find name directly on the object and return "Pete"
+
+
 ------------------------------------------------------------------------------------------
 
 TWO MAIN CONCEPTS IN PROTOTYPES
