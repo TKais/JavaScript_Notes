@@ -9,8 +9,22 @@
 TWO KINDS OF SCOPE
 
 1 - Local
-2 - Global
 
 LOCAL SCOPE
 Where variables declared in a function are local variables and they can only be accessed within that function and by functions in that function.
 
+EX)
+var name = "Tiff";
+
+function showName(){
+  var name = "Jack"; // local variable; only accessible in this showName function
+  console.log(name); //Jack
+}
+
+console.log(name) //Tiff
+
+*Always declare your local variables with a var keyword!!! Else, their global.
+
+
+
+2 - Global
