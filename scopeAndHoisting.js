@@ -27,7 +27,7 @@ console.log(name) //Tiff
 
 var name = "Richard"; //global variable name because it's outside of the function, but var declares it
 if(name){
-  name = "Jack"; //global variable name overrides the local
+  name = "Jack"; //global variable name overrides the other global because there's no block-level scope in JS
   console.log(name);
 }
 
@@ -103,6 +103,17 @@ showAge (); // 90​
 ​// Age is in the global context, so it is available here, too​
 console.log(age); // 90
 
+
+*Weird cases where variables are global:
+EX)
+// Both firstName variables are in the global scope, even though the second one is surrounded by a block {}. ​
+​var firstName = "Richard";
+{
+​var firstName = "Bob";
+}
+​
+​// The second declaration of firstName simply re-declares and overwrites the first one​
+console.log (firstName); // Bob
 
 
 
