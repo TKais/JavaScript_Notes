@@ -133,4 +133,36 @@ setTimeout Variables are Executed in the Global Scope
 
 *all functions in setTimeout are executed in the global scope
 
+EX)
+var highValue = 200;
+var constantVal = 2;
+var myObj = {
+  highValue: 20,
+  constantVal: 5,
+  calculateIt: function() {
+    setTimeout(function() {
+      console.log(this.constantVal * this.highValue);
+    }, 2000);
+  }
+}
+
+//the 'this' in the calculateIt function refers to the global highValue and constantVal (the Window object, not the myObj object).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
