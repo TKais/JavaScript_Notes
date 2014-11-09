@@ -129,4 +129,8 @@ aNumber ();  // 11​
 
 -------------------------------------------------------------------------------------------
 
+setTimeout Variables are Executed in the Global Scope
+
+*all functions in setTimeout are executed in the global scope
+
 
