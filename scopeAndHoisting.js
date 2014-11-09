@@ -77,3 +77,34 @@ users (); // Jack
 
 
 2 - Global
+
+GLOBAL SCOPE
+All variables declared outside a function are in the global scope, and are available to the enttire application.
+The global context or scope is the window object (or the entire HTML document)
+
+EX)
+var myName = "Tiff"; //global
+
+firstName = "Richard"; //also global
+
+var name; 
+name;     //also global
+
+*If a variable is initialized (assigned a value) without first being declared with the var keyword, it is automatically added to the global context and it is thus a global variable
+
+function showAge () {
+  // Age is a global variable because it was not declared with the var keyword inside this function​
+  age = 90;
+  console.log(age);// ​
+}
+​
+showAge (); // 90​
+​
+​// Age is in the global context, so it is available here, too​
+console.log(age); // 90
+
+
+
+
+
+
