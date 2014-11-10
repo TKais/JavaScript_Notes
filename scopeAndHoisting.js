@@ -127,6 +127,7 @@ console.log(i);
 ​// The variable i in the aNumber function below is the global variable i that was changed in the for loop above. Its last value was 11, set just before the for loop exited:​
 aNumber ();  // 11​
 
+*Dont create too many global variables! You dont want it to be accessible everywhere in your code or changing things unexpectedly.
 -------------------------------------------------------------------------------------------
 
 setTimeout Variables are Executed in the Global Scope
@@ -148,9 +149,9 @@ var myObj = {
 
 //the 'this' in the calculateIt function refers to the global highValue and constantVal (the Window object, not the myObj object).
 
+myObj.calculateIt(); // 400​
 
-
-
+-------------------------------------------------------------------------------------------
 
 
 
