@@ -179,7 +179,8 @@ function showName(){
 showName(); // First Name: undefined    Last Name: "Tiff"
 
 
+Function Declaration > Variable Declaration
+*Both function declaration and variable declarations are hoisted to the top of the containing scope. And function declaration takes precedence over variable declarations (but not over variable assignment). As is noted above, variable assignment is not hoisted, and neither is function assignment
 
-
-
+EX)
 
