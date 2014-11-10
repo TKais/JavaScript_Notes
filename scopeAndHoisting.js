@@ -183,4 +183,17 @@ Function Declaration > Variable Declaration
 *Both function declaration and variable declarations are hoisted to the top of the containing scope. And function declaration takes precedence over variable declarations (but not over variable assignment). As is noted above, variable assignment is not hoisted, and neither is function assignment
 
 EX)
+var cuteDog;
+function cuteDog(){
+  console.log("What a cute dog");
+}
+//both have the same name, but cuteDog will be a typeOf function in the end.
 
+EX)
+var myDog = "Inna";
+function myDog(){
+  console.log("A dog");
+}
+
+console.log(typeof myDog); //Inna 
+//Because variable assignment overrides function declaration
