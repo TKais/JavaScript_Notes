@@ -168,6 +168,15 @@ function showName(){
 showName(); // First Name: undefined    Last Name: "Tiff"
 
 
+So this is whats happening...
+function showName(){
+  var name;
+  console.log("First Name:" + name); //undefined
+  var name = "Tiff";
+  console.log("Last Name:" + name);
+}
+
+showName(); // First Name: undefined    Last Name: "Tiff"
 
 
 
