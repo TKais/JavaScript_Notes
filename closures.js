@@ -74,6 +74,8 @@ mjID.getID(); // 567: It returns the updated celebrityId variable 
 
 
 3) IIFE (Immediately Invoked Function Expression)
+IIFEs help us control scope so that the global space isnt polluted. 
+
 A big issue with closures can be that they access outer function variables or global variables that changed before even being invoked. Like this: 
 
 EX)
@@ -121,6 +123,14 @@ function celebrityIDCreator (theCelebrities) {
  console.log(stalloneID.id); // 100​
 ​
 ​var cruiseID = createIdForActionCelebs [1]; console.log(cruiseID.id); // 101
+
+
+*IIFE examples:
+
+EX)
+var test = function() {console.log("Hey")}(); //expression
+//OR
+(function test() {console.log("HEY")})();  //wrap declaration in parenthesis
 
 ------------------------------------------------------------------------------------------
 
