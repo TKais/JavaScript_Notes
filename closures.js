@@ -122,11 +122,23 @@ function celebrityIDCreator (theCelebrities) {
 ​
 ​var cruiseID = createIdForActionCelebs [1]; console.log(cruiseID.id); // 101
 
+------------------------------------------------------------------------------------------
+
+FUNCTION EXPRESSION VS FUNCTION DECLARATION
+
+1) Function Expression - var test = function() {};
+
+2) Function Declaration - function test() {};
 
 
+* A function expression can be called (invoked) immediately by using a set of parentheses, but a function declaration cannot be.
 
+*Just like PEMDAS, any parenthesis are evaluated first. So wrap a function in parenthesis and theyll be evaluated, then invoked. 
 
+CAN DO THESE THINGS TO IMMEDIATELY INVOKE A FUNCTION:
+1) var test = function() {console.log("Hey")}(); //expression
+2) (function test() {console.log("HEY")})();  //wrap declaration in parenthesis
 
-
-
+CANNOT DO:
+1) function test() {console.log("HEY"}(); //declaration
 
