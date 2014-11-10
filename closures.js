@@ -97,7 +97,7 @@ function celebrityIDCreator (theCelebrities) {
 ​
 ​var stalloneID = createIdForActionCelebs [0];  console.log(stalloneID.id()); // 103
 
-
+--
 *IIFEs immediately invoke the closure functions, like this: 
 
 EX)
