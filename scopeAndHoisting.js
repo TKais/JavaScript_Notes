@@ -153,12 +153,19 @@ myObj.calculateIt(); // 400​
 
 -------------------------------------------------------------------------------------------
 
+VARIABLE HOISTING
 
+*All variable declarations are hoisted (lifted and declared) to the top of the function, if defined in a function, or the top of the global context, if outside a function. 
+*Only variable declarations are hoisted to the top, not variable initialization or assignments (when the variable is assigned a value)
 
+EX)
+function showName(){
+  console.log("First Name:" + name);
+  var name = "Tiff";
+  console.log("Last Name:" + name);
+}
 
-
-
-
+showName(); // First Name: undefined    Last Name: "Tiff"
 
 
 
