@@ -12,3 +12,12 @@ HOW CALLBACKS WORK
 
 *since the containing function has the callback function in its parameter as a function definition, it can execute the callback anytime. IT IS NOT EXECUTED IMMEDIATELY.
 
+*Even anonymous functions are called back later not immediately.
+
+------------------------------------------------------------------------
+
+CALLBACKS === CLOSURES
+
+*Like closures, the callback function can access the containing functions’ variables, and even the variables from the global scope
+
+------------------------------------------------------------------------
