@@ -90,6 +90,11 @@ USING 'this' WITH CALLBACKS
 
 *When the callback function uses the 'this' object, we have to make slight changes to make sure it holds the accurate context of 'this'.
 
+*If not, 'this' will point to the window object or the object of the containing method.
+
+EX)
+
+
 
 
 
