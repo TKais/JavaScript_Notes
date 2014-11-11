@@ -65,3 +65,39 @@ EX) NAMED
 getInput ({name:"Rich", speciality:"JavaScript"}, logStuff);
 ​//  name: Rich​
 ​// speciality: JavaScript
+
+------------------------------------------------------------------------
+
+PASS PARAMETERS TO CALLBACK FUNCTIONS
+
+*We can pass any of the containing function’s properties (or global properties) as parameters to the callback function
+
+EX)
+var lastName = "Clinton";
+
+function getInput(options, callback){
+  allUserData.push(options);
+  callback(lastName, options);
+}
+
+*Callbacks must always be functions!
+
+*Best practice to make the callback optional
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
