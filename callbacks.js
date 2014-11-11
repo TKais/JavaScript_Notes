@@ -84,9 +84,11 @@ function getInput(options, callback){
 
 *Best practice to make the callback optional
 
+------------------------------------------------------------------------
 
+USING 'this' WITH CALLBACKS
 
-
+*When the callback function uses the 'this' object, we have to make slight changes to make sure it holds the accurate context of 'this'.
 
 
 
