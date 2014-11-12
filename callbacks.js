@@ -135,6 +135,13 @@ function getUserInput(firstName, lastName, callback, callbackObj){
     callback.apply(callbackObj, [firstName, lastName]); //apply sets this object to be callbackObj
 }
 
+WOULD BE...
+
+function getUserInput(firstName, lastName, callback, clientData){
+    //do stuff
+    callback.apply(clientData, [firstName, lastName]); //apply sets this object to be callbackObj
+}
+
 getUserInput("Tiff", "Kaiser", clientData.setUserName, clientData);
 console.log(clientData.fullName); //Tiff Kaiser
 
