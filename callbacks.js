@@ -132,6 +132,11 @@ function getUserInput(firstName, lastName, callback, callbackObj){
 }
 
 
+SO TO FIX THAT LAST ISSUE...
+
+getUserInput("Tiff", "Kaiser", clientData.setUserName, clientData);
+console.log(clientData.fullName); //Tiff Kaiser
+
 
 
 
