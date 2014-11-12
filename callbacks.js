@@ -93,6 +93,7 @@ USING 'this' WITH CALLBACKS CAN BE A PROBLEM
 *If not, 'this' will point to the window object or the object of the containing method.
 
 EX)
+//create an object literal for clientData containing the setUserName function
 var clientData = {
     id: 0945,
     fullName: "Not Set",
@@ -101,6 +102,7 @@ var clientData = {
     }
 }
 
+//create function to return a callback with first and last name
 function getUserInput(firstName, lastName, callback){
     callback(firstName, lastName);
 }
@@ -124,21 +126,19 @@ Calls first parameter is the value to be used as the 'this' object inside the fu
 
 
 --APPLY--
-Applys first argument is also the value to be used as the 'this' object inside the function, but the second parameter is an array of arguments passed to the function. 
-EX)
+Applys first argument is also the value to be used as the 'this' object inside the function, but the second parameter is an array of arguments passed to the function.
+
+ 
+SO TO FIX THAT LAST ISSUE...
 function getUserInput(firstName, lastName, callback, callbackObj){
     //do stuff
     callback.apply(callbackObj, [firstName, lastName]); //apply sets this object to be callbackObj
 }
 
-
-SO TO FIX THAT LAST ISSUE...
-
 getUserInput("Tiff", "Kaiser", clientData.setUserName, clientData);
 console.log(clientData.fullName); //Tiff Kaiser
 
-
-
+------------------------------------------------------------------------
 
 
 
