@@ -114,6 +114,38 @@ console.log(window.fullName); //Tiff Kaiser
 
 ...FIX THAT PROBLEM BY USING 'CALL' OR 'APPLY'
 
+*Every function in JavaScript has two methods: call and apply 
+
+*Both of these methods set the 'this' object inside the function and pass arguments to the function. 
+
+
+--CALL--
+Calls first parameter is the value to be used as the 'this' object inside the function, while the second parameter is comma-separated arguments passed to the function.
+
+
+--APPLY--
+Applys first argument is also the value to be used as the 'this' object inside the function, but the second parameter is an array of arguments passed to the function. 
+EX)
+function getUserInput(firstName, lastName, callback, callbackObj){
+    //do stuff
+    callback.apply(callbackObj, [firstName, lastName]); //apply sets this object to be callbackObj
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
