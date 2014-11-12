@@ -86,23 +86,33 @@ function getInput(options, callback){
 
 ------------------------------------------------------------------------
 
-USING 'this' WITH CALLBACKS
+USING 'this' WITH CALLBACKS CAN BE A PROBLEM
 
 *When the callback function uses the 'this' object, we have to make slight changes to make sure it holds the accurate context of 'this'.
 
 *If not, 'this' will point to the window object or the object of the containing method.
 
 EX)
+var clientData = {
+    id: 0945,
+    fullName: "Not Set",
+    setUserName: function(firstName, lastName){
+        this.fullName = firstName + " " + lastName;
+    }
+}
+
+function getUserInput(firstName, lastName, callback){
+    callback(firstName, lastName);
+}
 
 
+getUserInput("Tiff", "Kaiser", clientData.setUserName);
+console.log(clientData.fullName); //Not Set
+console.log(window.fullName); //Tiff Kaiser
 
+------------------------------------------------------------------------
 
-
-
-
-
-
-
+...FIX THAT PROBLEM BY USING 'CALL' OR 'APPLY'
 
 
 
