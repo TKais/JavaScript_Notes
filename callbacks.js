@@ -20,6 +20,14 @@ HOW CALLBACKS WORK
 
 ------------------------------------------------------------------------
 
+CALLBACKS ARE MAINLY USED IN...
+
+1) asynchronous execution (such as reading files, and making HTTP requests) //because some of these can take awhile to complete
+2) Event Listeners/Handlers //so an action can immediately take place when someone does something and allow others to click elsewhere as well
+3) setTimeout and setInterval methods //so it knows what to do upon completion
+4) Generalization: code conciseness //keep functions clean and single responsibility
+
+
 CALLBACKS === CLOSURES
 
 *Like closures, the callback function can access the containing functions’ variables, and even the variables from the global scope
