@@ -221,7 +221,7 @@ function userInput(firstName, lastName, age, callback){
     callback(fullName, age); //simply takes the user's data to do something else with it
 }
 
-
+//this is the callback function. The callback in userInput was called with the user's information, and makeAPoem knew what to do.
 function makeAPoem(name, age){
     console.log(name + " is the best");
     console.log("He has a nice vest");
@@ -230,5 +230,5 @@ function makeAPoem(name, age){
 }
 
 //CALL
-userInput("Tiff", "Kaiser", 28, makeAPoem);
+userInput("Tiff", "Kaiser", 28, makeAPoem); 
 
