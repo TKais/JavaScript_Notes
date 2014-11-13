@@ -203,7 +203,15 @@ DO:
 1) Name your functions, and make sure to pass just the function name as the argument (dont just make anonymous functions in the argument like above)
 2) Separate all code into modules so each section of code does a particular job and can be exported into your larger application.
 
+------------------------------------------------------------------------
 
+WHY CALLBACKS ARE IMPORTANT
+
+*A single function could do all the work, but it would be messy and limited because it couldnt carry out other tasks with that user data throughout the application.
+
+*Added functionality can be left up to the callbacks outside of that one functions scope. 
+
+****The main function that retrieves the user data can perform virtually any task with the user data by simply passing the user’s full name and gender as parameters to the callback function and then executing the callback function.
 
 
 
