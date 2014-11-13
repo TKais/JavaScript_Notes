@@ -213,7 +213,22 @@ WHY CALLBACKS ARE IMPORTANT
 
 ****The main function that retrieves the user data can perform virtually any task with the user data by simply passing the user’s full name and gender as parameters to the callback function and then executing the callback function.
 
+EX)
+//SETUP -- NO CALLS
+//this is the main function that simply gets the users input and allows a callback function to add more functionality with that data. It does nothing else. 
+function userInput(firstName, lastName, age, callback){
+    var fullName = firstName + " " + lastName;
+    callback(fullName, age); //simply takes the user's data to do something else with it
+}
 
 
+function makeAPoem(name, age){
+    console.log(name + " is the best");
+    console.log("He has a nice vest");
+    console.log("He'll beat any test");
+    console.log("At the age of " + age + " he can also build a great nest");
+}
 
+//CALL
+userInput("Tiff", "Kaiser", 28, makeAPoem);
 
