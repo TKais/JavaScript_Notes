@@ -230,5 +230,5 @@ function makeAPoem(name, age){
 }
 
 //CALL
-userInput("Tiff", "Kaiser", 28, makeAPoem); 
+userInput("Tiff", "Kaiser", 28, makeAPoem); //don't put () by function because it's not called here, it's called in userInput's callback function.
 
