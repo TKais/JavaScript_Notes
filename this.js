@@ -10,3 +10,12 @@ ELSE
 "Tiff is running fast because Tiff is trying to catch a plane"
 //too redundant, we need pronouns. And we need 'this'
 
+
+EX)
+var girl = {
+  firstName: "Tiff",
+  lastName: "Kaiser",
+  fullName: function(){
+    console.log(this.firstName + " " + this.lastName); //synonymous with girl.firstName and girl.lastName //you NEED 'this' here before firstName and lastName because functions dont automatically see the other variables in the object -- must reference the object
+  }
+}
