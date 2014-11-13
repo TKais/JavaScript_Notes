@@ -232,3 +232,26 @@ function makeAPoem(name, age){
 //CALL
 userInput("Tiff", "Kaiser", 28, makeAPoem); //don't put () by function because it's not called here, it's called in userInput's callback function.
 
+------------------------------------------------------------------------
+
+EXAMPLE WITH MORE CALLBACKS
+
+*Lets do the same as above, but with more callbacks.
+
+function userInput(firstName, lastName, age, callback){
+    var fullName = firstName + " " + lastName;
+    callback(fullName, age); //simply takes the user's data to do something else with it
+}
+
+function makeAPoem(name, age){
+    console.log(name + " is the best");
+    console.log("He has a nice vest");
+    console.log("He'll beat any test");
+    console.log("At the age of " + age + " he can also build a great nest");
+}
+
+function greetUser(newName, age){
+    console.log("Hello " + newName + "." + " You are " + age + " years old.");
+}
+
+userInput("Tiff", "Kaiser", 28, greetUser);
