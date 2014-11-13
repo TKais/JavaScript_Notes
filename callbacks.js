@@ -14,6 +14,10 @@ HOW CALLBACKS WORK
 
 *Even anonymous functions are called back later not immediately.
 
+*They keep code DRY
+*More readable
+*Better maintained
+
 ------------------------------------------------------------------------
 
 CALLBACKS === CLOSURES
@@ -174,8 +178,30 @@ CALLBACK HELL AND HOW TO DEAL WITH IT
 
 *Too many callbacks can make it hard to follow the code, and thats what callback hell is. 
 
+EX)
+var new_client = new Db('integration_tests_20', new Server("127.0.0.1", 27017, {}), {'pk':CustomPKFactory});
+new_client.open(function(err, new_client) {
+    new_client.dropDatabase(function(err, done) {
+        new_client.createCollection('test_custom_key', function(err, collection) {
+            collection.insert({'a':1}, function(err, docs) {
+                collection.find({'_id':new ObjectID("011223344")}, function(err, cursor) {
+                    cursor.toArray(function(err, items) {
+                        test.assertEquals(1, items.length);
+​
+                        // Let's close the db​
+                        new_client.close();
+                    });
+                });
+            });
+        });
+    });
+});
 
 
+DO:
+
+1) Name your functions, and make sure to pass just the function name as the argument (dont just make anonymous functions in the argument like above)
+2) Separate all code into modules so each section of code does a particular job and can be exported into your larger application.
 
 
 
