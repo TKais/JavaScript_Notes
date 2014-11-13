@@ -147,8 +147,26 @@ console.log(clientData.fullName); //Tiff Kaiser
 
 ------------------------------------------------------------------------
 
+MULTIPLE CALLBACKS 
 
+function workedCallback(){
+    //do this if successful
+}
 
+function oopsCallback(){
+    //do this if an error is received
+}
+
+function doneCallback(){
+    //do this when data is received
+}
+
+$.ajax({
+    url: "www.spotify.com",
+    worked: workedCallback,
+    oops: oopsCallback,
+    done: doneCallback
+});
 
 
 
