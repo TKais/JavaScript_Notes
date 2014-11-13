@@ -168,8 +168,11 @@ $.ajax({
     done: doneCallback
 });
 
+------------------------------------------------------------------------
 
+CALLBACK HELL AND HOW TO DEAL WITH IT 
 
+*Too many callbacks can make it hard to follow the code, and thats what callback hell is. 
 
 
 
