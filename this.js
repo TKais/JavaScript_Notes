@@ -19,3 +19,10 @@ var girl = {
     console.log(this.firstName + " " + this.lastName); //synonymous with girl.firstName and girl.lastName //you NEED 'this' here before firstName and lastName because functions dont automatically see the other variables in the object -- must reference the object
   }
 }
+
+*The 'this' keyword not only refers to the object, but it also contains the value of the object.
+
+----------------------------------------------------------------------------------
+
+ 
+
