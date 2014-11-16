@@ -24,5 +24,33 @@ var girl = {
 
 ----------------------------------------------------------------------------------
 
- 
+ THIS BASICS
+
+ *All functions in JavaScript have properties, just as objects have properties. And when a function executes, it gets the 'this' property, which is a variable with the value of the object that invokes the function where 'this' is used.
+
+*'this' always refers to an object and is usually found in a function or method.
+
+*'this' will be equal to undefined in strict mode in global functions or anonymous functions without objects.
+
+*'this' is really just a shortcut reference for the invoking object.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
