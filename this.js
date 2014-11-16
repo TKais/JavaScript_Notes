@@ -77,6 +77,49 @@ var anotherJob = {
 
 job.showNameAndLocation.apply(anotherJob); //CoPilot is a company located in Oakland, CA 
 
+*Different objects invoking the 'this' changes the context of 'this'
+
+----------------------------------------------------------------------------------
+
+USING 'THIS' WITH CALLBACKS
+
+var job = {
+  data:[
+  {name: "AutopilotHQ", age: 2},
+  {name: "CoPilot", age: 2}
+  ],
+  randomizer: function(event){
+    var randomNumber = ((Math.random() * 2 | 0) + 1) - 1;
+    console.log(this.data[randomNumber].name + " " + this.data[randomNumber].age);
+  }
+}
+
+
+$("button").click(job.randomizer); //Cannot read property '0' of undefined
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
