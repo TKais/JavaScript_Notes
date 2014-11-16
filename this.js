@@ -97,7 +97,7 @@ var job = {
 
 $("button").click(job.randomizer); //Cannot read property '0' of undefined
 
-//Do this instead
+//Do this instead----------------------------------
 $("button").click(job.randomizer.bind(job)); // AutopilotHQ 2
 //this binds the job object to the method so the 'this' can be recognized while preserving the jQuery button object as the object that invokes the 'this'
 
@@ -136,7 +136,31 @@ var user = {
 *'this' within the anonymous function cant access the outer functions 'this', so its bound to the window object.
 
 
+//Do this instead-----------------------------
+var user = {
+    tournament:"The Masters",
+    data      :[
+    {name:"T. Woods", age:37},
+    {name:"P. Mickelson", age:43}
+    ],
+​
+    clickHandler:function (event) {
+    // To capture the value of "this" when it refers to the user object, we have to set it to another variable here:​
+    // We set the value of "this" to theUserObj variable, so we can use it later​
+    var theUserObj = this;
+    this.data.forEach (function (person) {
+    // Instead of using this.tournament, we now use theUserObj.tournament​
+    console.log (person.name + " is playing at " + theUserObj.tournament);
+    })
+    }
+​
+    }
+​
+    user.clickHandler();
+    // T. Woods is playing at The Masters​
+    //  P. Mickelson is playing at The Masters
 
+  //we've set the 'this' to a variable before entering the each loop (or in any case, the closure)
 
 
 
