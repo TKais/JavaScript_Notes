@@ -97,8 +97,13 @@ var job = {
 
 $("button").click(job.randomizer); //Cannot read property '0' of undefined
 
+//Do this instead
+$("button").click(job.randomizer.bind(job)); // AutopilotHQ 2
+//this binds the job object to the method so the 'this' can be recognized while preserving the jQuery button object as the object that invokes the 'this'
 
+----------------------------------------------------------------------------------
 
+USING 'THIS' WITH CLOSURES
 
 
 
