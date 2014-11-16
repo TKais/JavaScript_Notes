@@ -34,7 +34,17 @@ var girl = {
 
 *'this' is really just a shortcut reference for the invoking object.
 
+----------------------------------------------------------------------------------
 
+JQUERY AND 'THIS'
+
+EX)
+$("button").click(function(event){
+  console.log($(this).prop("name"));
+});
+
+
+In the above example, $(this) -- which is jQuerys syntax for the 'this' keyword -- refers to $("button") because it refers to the object that invokes the click method. 
 
 
 
