@@ -105,12 +105,35 @@ $("button").click(job.randomizer.bind(job)); // AutopilotHQ 2
 
 USING 'THIS' WITH CLOSURES
 
+*Closures cannot access the outer function’s 'this' variable by using the this keyword because the 'this' variable is accessible only by the function itself, not by inner functions
 
+EX)
+var user = {
+    tournament:"The Masters",
+    data      :[
+    {name:"T. Woods", age:37},
+    {name:"P. Mickelson", age:43}
+    ],
+​
+    clickHandler:function () {
+    // the use of this.data here is fine, because "this" refers to the user object, and data is a property on the user object.​
+    this.data.forEach (function (person) {
+    // But here inside the anonymous function (that we pass to the forEach method), "this" no longer refers to the user object.​
+    // This inner function cannot access the outer function's "this"​
+   
+    console.log ("What is This referring to? " + this); //[object Window]​
+ 
+    console.log (person.name + " is playing at " + this.tournament);
+    // T. Woods is playing at undefined​
+    // P. Mickelson is playing at undefined​
+    })
+    }
+​
+    }
+​
+    user.clickHandler(); // What is This referring to? [object Window]
 
-
-
-
-
+*'this' within the anonymous function cant access the outer functions 'this', so its bound to the window object.
 
 
 
