@@ -39,12 +39,14 @@ var girl = {
 JQUERY AND 'THIS'
 
 EX)
-$("button").click(function(event){
+$("button").click(function(event){ //$("button") is an object because it's wrapped in a jQuery function $()...this makes it a jQuery object
   console.log($(this).prop("name"));
 });
 
 
 In the above example, $(this) -- which is jQuerys syntax for the 'this' keyword -- refers to $("button") because it refers to the object that invokes the click method. 
+
+
 
 
 
