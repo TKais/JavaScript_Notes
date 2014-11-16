@@ -54,6 +54,28 @@ MOST IMPORTANT THING TO REMEMBER ABOUT 'THIS'
 
 ----------------------------------------------------------------------------------
 
+HOW 'THIS' WORKS WITH DIFFERENT OBJECTS INVOKING IT 
+
+EX)
+var job = {
+  name: "AutopilotHQ",
+  location: "San Francisco, CA",
+  type: "Marketing Software",
+  CEO: "Mike Sharkey",
+  showNameAndLocation: function(){
+    console.log(this.name + " is a company located in " + this.location);
+  }
+}
+
+job.showNameAndLocation(); //AutopilotHQ is a company located in San Francisco, CA
+
+var anotherJob = {
+  name: "CoPilot",
+  location: "Oakland, CA",
+  type: "Marketing Software",
+}
+
+job.showNameAndLocation.apply(anotherJob); //CoPilot is a company located in Oakland, CA 
 
 
 
