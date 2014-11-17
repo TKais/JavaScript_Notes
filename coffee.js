@@ -61,3 +61,14 @@ foobar ->
 COFFEESCRIPT BASICS
 
 ()-> //this is a function
+
+coffee = -> //is the same as 
+coffee()
+
+coffee = (message) -> //is the same as 
+coffee("Yo");
+
+coffee = (message, other) -> //is the same as
+coffee("Yo", 2)
+
+*Message and Other above are both parameters being passed to the function
