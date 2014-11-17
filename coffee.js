@@ -116,8 +116,20 @@ greet = (message) ->
 greet = (message, anothermessage) ->
   alert(message + " " + anothermessage)
 
+4) Give the greet function a default value of "Stranger"
 
+greet = (name = "Stranger") ->
+  alert name
 
+5) Use string interpolation instead
+
+greet = (name = "Stranger") ->
+  "Hello, #{name}"
+
+6) Write a function named sum with two arguments and have it return the sum of both numbers
+
+greet = (num1, num2) ->
+  num1 + num2 
 
 
 
