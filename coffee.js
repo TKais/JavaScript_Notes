@@ -99,8 +99,22 @@ coffee = function(message){
 
 ---------------------------------------------------------------------------------
 
+CODE EXAMPLES
 
+1) Define a greet function that takes no argument and alerts "Hello CoffeeScript"
 
+greet = ->
+  alert "Hello CoffeeScript"
+
+2) Change greet so that it accepts a single argument and alerts that argument
+
+greet = (message) ->
+  alert message
+
+3) Give greet two arguments and alert them both
+
+greet = (message, anothermessage) ->
+  alert(message + " " + anothermessage)
 
 
 
