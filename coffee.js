@@ -131,8 +131,31 @@ greet = (name = "Stranger") ->
 greet = (num1, num2) ->
   num1 + num2 
 
+---------------------------------------------------------------------------------
+
+COFFEESCRIPT WITH JQUERY 
 
 
+*JavaScript Example:
+
+jQuery(function($){
+  function changeTab(e){
+    e.preventDefault();
+    $("#tabs li a.active").removeClass("active");
+    $(this).addClass("active");
+  }
+  $("#tabs ul li a").click(changeTab);
+});
+
+
+*jQuery Example:
+
+jQuery($) ->
+  changeTab = (e) ->
+    e.preventDefault()
+    $("#tabs li a.active").removeClass "active"
+    $(@).addClass "active"
+  $("#tabs ul li a").click changeTab
 
 
 
