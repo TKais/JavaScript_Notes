@@ -289,6 +289,34 @@ $('.drink li').mouseenter ->
 $('.drink li').mouseleave ->
   $(@).find('span').hide()
 
+//------------------------------------------------
+
+*jQuery
+
+ $('.drink li').hover(function() {
+   $(this).find('span').show();
+ }, function() {
+   $(this).find('span').hide();
+ });  
+
+*JavaScript
+
+$('.drink li').hover(function() {
+  return $(this).find('span').show();
+}, function() {
+  return $(this).find('span').hide();
+});
+
+
+*CoffeeScript
+
+$('.drink li').hover( 
+  ->
+    $(@).find('span').show()
+  ->
+    $(@).find('span').hide()
+    
+  )
 
 
 
