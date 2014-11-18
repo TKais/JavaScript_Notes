@@ -162,7 +162,7 @@ NOTE: @ is 'this' in CoffeeScript
 
 -------------------------------------------------------------------------------------
 
-CODE CHALLENGES
+JQUERY CODE CHALLENGES
 
 *jQuery
 
@@ -317,6 +317,82 @@ $('.drink li').hover(
     $(@).find('span').hide()
     
   )
+
+-------------------------------------------------------------------------------------
+
+CONDITIONALS AND OPERATORS
+
+
+****IF****
+
+*JavaScript
+
+if(age<18){
+  alert("Under age");
+}
+
+
+*CoffeeScript
+
+if age < 18
+  alert "Under age"
+
+OR  
+
+alert "Under age" if age < 18
+
+OR 
+
+if age < 18 then alert "Under age"
+
+//------------------------------------------------
+
+****ELSE****
+
+*JavaScript
+
+if(age<18){
+  alert('Under age');
+} else {
+  alert('Of age');
+}
+
+
+*CoffeeScript
+
+if age < 18
+  alert 'Under age'
+else
+  alert 'Of age'
+
+OR
+
+if age < 18 then alert 'Under age' else alert 'Of age'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
