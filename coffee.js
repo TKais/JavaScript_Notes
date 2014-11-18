@@ -260,7 +260,34 @@ $('.drink li a').click (e) ->
   e.preventDefault()
   alert $(@).text()
 
+//------------------------------------------------
 
+*jQuery
+
+  $('.drink li').mouseenter(function() {
+   $(this).find('span').show();
+ });
+ $('.drink li').mouseleave(function() {
+   $(this).find('span').hide();
+ });
+
+*JavaScript
+
+$('.drink li').mouseenter(function() {
+  return $(this).find('span').show();
+});
+$('.drink li').mouseleave(function() {
+  return $(this).find('span').hide();
+});
+
+
+*CoffeeScript
+
+$('.drink li').mouseenter ->
+  $(@).find('span').show()
+  
+$('.drink li').mouseleave ->
+  $(@).find('span').hide()
 
 
 
