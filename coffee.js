@@ -423,6 +423,35 @@ if(2<newLevel && newLevel < 5){
 if 2 < newLevel <5 
   alert "In Range"!
 
+//------------------------------------------------
+
+SWITCH STATEMENTS
+
+
+*JavaScript
+
+var message = (function(){
+  switch(cupsOfCoffee){
+    case 0:
+    return 'Asleep';
+    case 1:
+    return 'Eyes Open';
+    case 2:
+    return 'Buzzed';
+    case 3:
+    return 'Dangerous';
+  }
+})();
+
+*CoffeeScript
+
+message = switch cupsOfCoffee
+  when 0 then 'Asleep'
+  when 1 then 'Eyes Open'
+  when 2 then 'Buzzed'
+  else 'Dangerous'
+
+//------------------------------------------------
 
 
 
