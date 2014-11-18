@@ -239,6 +239,28 @@ $('#newCoffee a').click ->
 
 //------------------------------------------------
 
+*jQuery
+
+ $('.drink li a').click(function(e) {
+   e.preventDefault();
+   alert($(this).text());
+ });
+
+*JavaScript
+
+$('.drink li a').click(function(e) {
+  e.preventDefault();
+  return alert($(this).text());
+});
+
+
+*CoffeeScript
+
+$('.drink li a').click (e) ->
+  e.preventDefault()
+  alert $(@).text()
+
+
 
 
 
