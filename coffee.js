@@ -407,10 +407,21 @@ addCaffeine() if not Decaf()
 
 addCaffeine() unless Decaf()
 
+//------------------------------------------------
+
+CHAINED COMPARISONS 
 
 
+*JavaScript
 
+if(2<newLevel && newLevel < 5){
+  alert("In Range!");
+}
 
+*CoffeeScript
+
+if 2 < newLevel <5 
+  alert "In Range"!
 
 
 
