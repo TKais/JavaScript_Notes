@@ -160,7 +160,31 @@ jQuery($) ->
 
 NOTE: @ is 'this' in CoffeeScript 
 
+-------------------------------------------------------------------------------------
 
+CODE CHALLENGES
+
+*jQuery
+
+ jQuery(function($) {
+   $('#newCoffee a').click(function() {
+     alert('New coffee added');
+   });
+ });
+
+ *JavaScript
+
+jQuery(function($) {
+  return $('#newCoffee a').click(function() {
+    return alert("New coffee added");
+  });
+});
+
+*CoffeeScript
+
+jQuery ($) ->
+  $('#newCoffee a').click () ->
+    alert "New coffee added"
 
 
 
