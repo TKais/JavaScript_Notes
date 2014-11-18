@@ -369,7 +369,23 @@ OR
 
 if age < 18 then alert 'Under age' else alert 'Of age'
 
+//------------------------------------------------
 
+COFFEESCRIPT                     JAVASCRIPT 
+
+==   is                          ===
+
+!=   isnt                        !==
+
+not                              !
+
+and                              &&
+
+OR                               ||
+
+true yes on                      true
+
+false no off                     false
 
 
 
