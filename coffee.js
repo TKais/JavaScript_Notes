@@ -186,8 +186,30 @@ jQuery ($) ->
   $('#newCoffee a').click () ->
     alert "New coffee added"
 
+//------------------------------------------------
 
+*jQuery
 
+ $('#newCoffee a').click(function() {
+   var name = prompt('Name of coffee:');
+   alert("New coffee added: " + name);
+ });
+
+ *JavaScript
+
+$('#newCoffee a').click(function() {
+  var name;
+  name = prompt("Name of coffee");
+  return alert("New coffee added: " + name);
+});
+
+*CoffeeScript
+
+$('#newCoffee a').click ->
+  name = prompt "Name of coffee"
+  alert "New coffee added: #{name}"
+
+//------------------------------------------------
 
 
 
