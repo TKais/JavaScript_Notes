@@ -211,6 +211,34 @@ $('#newCoffee a').click ->
 
 //------------------------------------------------
 
+*jQuery
+
+ $('#newCoffee a').click(function() {
+   var coffee, name;
+   name = prompt('Name of coffee:');
+   coffee = $("<li>" + name + "</li>");
+   $('ul.drink').append(coffee);
+ });
+
+ *JavaScript
+
+$('#newCoffee a').click(function() {
+  var coffee, name;
+  name = prompt("Name of coffee:");
+  coffee = $("<li>" + name + "</li>");
+  return $('ul.drink').append(coffee);
+});
+
+
+*CoffeeScript
+
+$('#newCoffee a').click ->
+  name = prompt("Name of coffee:")
+  coffee = $("<li>#{name}</li>")
+  $('ul.drink').append coffee
+
+//------------------------------------------------
+
 
 
 
