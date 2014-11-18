@@ -158,7 +158,7 @@ jQuery($) ->
   $("#tabs ul li a").click changeTab
 
 
-
+NOTE: @ is 'this' in CoffeeScript 
 
 
 
