@@ -387,8 +387,25 @@ true yes on                      true
 
 false no off                     false
 
+//------------------------------------------------
+
+OPERATORS IN USE 
 
 
+*JavaScript
+
+if (paid() && coffee() === true){
+  pour();
+}
+
+
+*CoffeeScript
+
+if paid() and coffee() is on then pour()
+
+addCaffeine() if not Decaf()
+
+addCaffeine() unless Decaf()
 
 
 
