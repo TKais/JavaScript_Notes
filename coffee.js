@@ -645,6 +645,23 @@ if level?
 else
   resetLevel?()
 
+-------------------------------------------------------------------------------------
+
+ARRAYS
+
+
+make an array like this:
+
+storeLocations = ['Orlando', 'SF', 'Detroit']
+
+OR
+
+storeLocations = [
+  "Orlando"
+  "SF"
+  "Detroit"
+  ]
+
 //------------------------------------------------
 
 
