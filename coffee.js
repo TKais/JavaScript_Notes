@@ -483,7 +483,18 @@ OR
 
 cupsOfCoffee ?= 0 //if it exists and hasn't been previously set, set it to 0
 
+//------------------------------------------------
 
+//Call brew on coffeepot only if it exists
+
+*CoffeeScript
+
+if coffeePot?
+  coffeePot.brew()
+
+OR 
+
+coffeePot?.brew()
 
 
 
