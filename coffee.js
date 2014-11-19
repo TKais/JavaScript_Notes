@@ -650,11 +650,11 @@ else
 ARRAYS
 
 
-make an array like this:
+//make an array like this:
 
 storeLocations = ['Orlando', 'SF', 'Detroit']
 
-OR
+//OR
 
 storeLocations = [
   "Orlando"
@@ -663,6 +663,41 @@ storeLocations = [
   ]
 
 //------------------------------------------------
+
+//Loop through arrays like this
+
+for location in storeLocations
+  alert "Location: #{location}"
+
+
+//List Comprehensions
+
+storeLocations = [
+  "Orlando"
+  "SF"
+  "Detroit"
+  ]
+
+"#{loc}, FL" for loc in storeLocations
+//OR
+storeLocations = ("#{loc}, FL" for loc in storeLocations)
+//these parenthesis are important
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
