@@ -496,7 +496,14 @@ OR
 
 coffeePot?.brew()
 
+//------------------------------------------------
 
+//Only call a function if it exists
+
+
+*CoffeeScript
+
+vehicle.start_engine?().shift_gear?()
 
 
 
