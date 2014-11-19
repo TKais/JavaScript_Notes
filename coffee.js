@@ -505,6 +505,23 @@ coffeePot?.brew()
 
 vehicle.start_engine?().shift_gear?()
 
+//------------------------------------------------
+
+//Examples
+
+*JavaScript
+
+if (caffeineLevel > 5) {
+  alert('High Caffeine Level');
+}
+
+
+*CoffeeScript 
+
+alert('High Caffeine Level') if caffeineLevel>5
+
+//------------------------------------------------
+
 
 
 
