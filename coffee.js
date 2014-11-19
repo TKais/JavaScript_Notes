@@ -522,15 +522,34 @@ alert('High Caffeine Level') if caffeineLevel>5
 
 //------------------------------------------------
 
+//CoffeeScript doesn't have ternary operators, so use if/then/else
+
+*JavaScript
+
+if (caffeineLevel > 5) {
+  alert('Too High');
+} else {
+  alert('OK');
+}
+
+
+*CoffeeScript
+
+if caffeineLevel > 5 
+  alert('Too High')
+else 
+  alert('OK');
+
+//------------------------------------------------
+
+
+
+*JavaScript
 
 
 
 
-
-
-
-
-
+*CoffeeScript
 
 
 
