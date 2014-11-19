@@ -623,14 +623,29 @@ if newLevel? then checkLevel(newLevel) else resetLevel()
 
 //------------------------------------------------
 
+//check if functions exist
+
 *JavaScript
+
+if (typeof level !== "undefined" && level !== null) {
+  if (typeof checkLevel === "function") {
+    checkLevel(level);
+  }
+} else {
+  if (typeof resetLevel === "function") {
+    resetLevel();
+  }
+}
 
 
 *CoffeeScript
 
+if level?
+  checkLevel?(level)
+else
+  resetLevel?()
 
-
-
+//------------------------------------------------
 
 
 
