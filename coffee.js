@@ -558,6 +558,25 @@ alert "Please wait 5 more minutes" unless coffeeReady
 
 //------------------------------------------------
 
+//Use chained comparisons
+
+*JavaScript
+
+if ((lowLevel < newLevel && newLevel < highLevel)) {
+  alert('ok');
+} else {
+  alert('abnormal caffeine level');
+}
+
+
+*CoffeeScript
+
+if lowLevel < newLevel < highLevel
+  alert 'ok'
+else
+  alert 'abnormal caffeine level'
+
+//------------------------------------------------
 
 *JavaScript
 
@@ -565,12 +584,6 @@ alert "Please wait 5 more minutes" unless coffeeReady
 
 
 *CoffeeScript
-
-
-
-
-
-
 
 
 
