@@ -605,14 +605,28 @@ message = switch newLevel
 
 //------------------------------------------------
 
+//Use '?' in coffeescript for existence check
+
+
 *JavaScript
 
+if (typeof newLevel !== "undefined" && newLevel !== null) {
+  checkLevel(newLevel);
+} else {
+  resetLevel();
+}
 
 
 *CoffeeScript
 
+if newLevel? then checkLevel(newLevel) else resetLevel()
+
+//------------------------------------------------
+
+*JavaScript
 
 
+*CoffeeScript
 
 
 
