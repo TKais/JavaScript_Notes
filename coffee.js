@@ -542,6 +542,21 @@ else
 
 //------------------------------------------------
 
+//Use an unless conditional
+
+
+*JavaScript
+
+if (!coffeeReady) {
+  alert("Please wait 5 more minutes");
+}
+
+
+*CoffeeScript
+
+alert "Please wait 5 more minutes" unless coffeeReady
+
+//------------------------------------------------
 
 
 *JavaScript
@@ -550,10 +565,6 @@ else
 
 
 *CoffeeScript
-
-
-
-
 
 
 
