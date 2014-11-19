@@ -578,17 +578,38 @@ else
 
 //------------------------------------------------
 
+//switch statement 
+
 *JavaScript
 
+var message;
+message = (function() {
+  switch (newLevel) {
+    case 1:
+      return 'Out of bed yet?';
+    case 2:
+      return 'Good morning!';
+    default:
+      return 'You should stop while you can';
+  }
+})();
 
 
 
 *CoffeeScript
 
+message = switch newLevel
+  when 1 then 'Out of bed yet?'
+  when 2 then 'Good morning!'
+  else 'You should stop while you can'
+
+//------------------------------------------------
+
+*JavaScript
 
 
 
-
+*CoffeeScript
 
 
 
