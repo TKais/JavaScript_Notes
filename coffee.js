@@ -451,7 +451,67 @@ message = switch cupsOfCoffee
   when 2 then 'Buzzed'
   else 'Dangerous'
 
+-------------------------------------------------------------------------------------
+
+EXISTENTIAL OPERATORS 
+
+
+
+*JavaScript
+
+if(typeof cupsOfCoffee != undefined && cupsOfCoffee != null){
+  alert("It exists!");
+}
+
+
+*CoffeeScript
+
+if cupsOfCoffee?
+  alert 'It exists!'
+
 //------------------------------------------------
+
+//Set a default
+
+
+*CoffeeScript
+
+if not cupsOfCoffee?
+  cupsOfCoffee = 0
+
+OR 
+
+cupsOfCoffee ?= 0 //if it exists and hasn't been previously set, set it to 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
