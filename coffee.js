@@ -683,11 +683,21 @@ storeLocations = [
 storeLocations = ("#{loc}, FL" for loc in storeLocations)
 //these parenthesis are important
 
+//------------------------------------------------
+
+//You can use ranges
+
+*JavaScript
+
+var array;
+array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 
+*CoffeeScript
 
+array = [1..10]
 
-
+//------------------------------------------------
 
 
 
