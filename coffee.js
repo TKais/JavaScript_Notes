@@ -727,6 +727,28 @@ coffee =
   level: 2
   isRussian: -> true
 
+------------------------------------------------------------------------------------------------
+
+FOR IN LOOPS 
+
+
+
+*JavaScript
+
+var person, _i, _len;
+for (_i = 0, _len = people.length; _i < _len; _i++) {
+  person = people[_i];
+  if (person.age > 18) {
+    console.log(person.name);
+  }
+}
+
+
+
+*CoffeeScript
+
+for person in people
+  console.log person.name if person.age >18
 
 
 
