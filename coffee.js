@@ -693,20 +693,39 @@ var array;
 array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 
+
+
 *CoffeeScript
 
 array = [1..10]
 
-//------------------------------------------------
+array = [1...11]
+
+------------------------------------------------------------------------------------------------
+
+OBJECTS 
+
+//Create a variable named coffee which is an object with a name property set to 'Russian', a level property set to 2 and an isRussian property which holds a function that returns true. Use an object literal.
 
 
+*JavaScript
+
+var coffee;
+coffee = {
+  name: 'Russian',
+  level: 2,
+  isRussian: function() {
+    return true;
+  }
+};
 
 
+*CoffeeScript
 
-
-
-
-
+coffee =
+  name: 'Russian'
+  level: 2
+  isRussian: -> true
 
 
 
