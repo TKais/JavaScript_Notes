@@ -750,8 +750,22 @@ for (_i = 0, _len = people.length; _i < _len; _i++) {
 for person in people
   console.log person.name if person.age >18
 
+------------------------------------------------------------------------------------------------
+
+SPLAT 
 
 
+*The splat operator allows a function or method to accept multiple arguments. It is indicated with the '...'
+
+EX) 
+Forum posters get points for their posts weekly. First gets 10 points, second gets 6 and the third gets 2 points while everyone else gets just 1 point. 
+
+giveKudos = (first, second, third, rest...) ->
+  addKudosToUser first, 10
+  addKudosToUser second, 6
+  addKudosToUser third, 2
+    for user in rest
+      addKudosToUser user, 1
 
 
 
