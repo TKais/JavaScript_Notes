@@ -767,7 +767,11 @@ giveKudos = (first, second, third, rest...) ->
     for user in rest
       addKudosToUser user, 1
 
+users = ["Pasan", "Amit", "Jim", "Andrew", "Allison", "Jason", "AJ"]
 
+
+//CALL IT
+giveKudos users...
 
 
 
