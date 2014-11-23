@@ -773,8 +773,26 @@ users = ["Pasan", "Amit", "Jim", "Andrew", "Allison", "Jason", "AJ"]
 //CALL IT
 giveKudos users...
 
+------------------------------------------------------------------------------------------------
+
+CLASSES
 
 
+*You can use explicit class names like in Ruby
+
+EX)
+class TimeMachine
+  constructor: ->
+
+//methods are before a colon and need whitespace before the name
+
+
+time_machine = new TimeMachine
+//To instantiate an instance of an object, use the keyword new followed by the class name
+
+//-------------------------------------------------
+
+INSTANCE VARIALBES
 
 
 
