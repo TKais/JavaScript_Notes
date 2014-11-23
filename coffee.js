@@ -794,6 +794,26 @@ time_machine = new TimeMachine
 
 INSTANCE VARIALBES
 
+*Instance variables start with an @ symbol
+
+EX)
+class TimeMachine
+  constructor: (pilot) ->
+    @pilot = pilot 
+
+//access them via dot notation
+
+time_machine = new TimeMachine "H. G. Wells"
+
+console.log time_machine.pilot //H. G. Wells
+
+
+//Can also do shorthand like this
+
+class TimeMachine
+  constructor: (@pilot) ->
+
+//-------------------------------------------------
 
 
 
