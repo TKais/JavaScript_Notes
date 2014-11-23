@@ -50,6 +50,20 @@ async.waterfall([
 
 
 
+*CoffeeScript
+
+async.waterfall [
+(callback) ->
+  callback null, "one", "two"
+
+(arg1, arg2, callback) ->
+  callback null, "three"
+
+(arg1, callback) ->
+  callback null, "done"
+], (err, result) ->
+
+
 
 
 
