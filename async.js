@@ -15,4 +15,6 @@ async.waterfall([
   }, function(arg1, callback) {
     return callback(null, "done");
   }
-], function(err, result) {});
+], function(err, result) {
+  return console.log(result);
+});

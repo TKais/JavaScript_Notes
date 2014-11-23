@@ -37,3 +37,4 @@ async.waterfall [
   (arg1, callback) ->
     callback null, "done"
 ], (err, result) ->
+  console.log result
