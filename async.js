@@ -24,3 +24,61 @@ ASYNC WATERFALL
 
 
 *Runs an array of functions in series, each passing their results to the next in the array. However, if any of the functions pass an error to the callback, the next function is not executed and the main callback is immediately called with the error.
+
+
+*JavaScript
+
+var create = function(req, res) {
+  async.waterfall([
+    _function1(req),
+    _function2,
+    _function3
+  ], function(error, success){
+    if(error){ alert("Something went wrong!");}
+    return alert("Done!");
+  });
+};
+
+function _function1(req){
+  return function(callback) {
+    var something = req.body;
+    callback(null, something);
+  }
+}
+
+function _function2(something, callback){
+  return function(callback) {
+    var somethingelse = function(){
+      console.log("Made it this far");
+      callback(err, somethingelse);
+    }
+  }
+}
+
+function _function3(something, callback){
+  return function(callback){
+    var somethingmore = function(){
+      console.log("Made it to the end!");
+      callback(err, somethingmore);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
