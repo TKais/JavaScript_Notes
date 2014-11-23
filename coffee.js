@@ -815,6 +815,73 @@ class TimeMachine
 
 //-------------------------------------------------
 
+CLASS INHERITENCE 
+
+
+*Write a subclass using 'extends'
+
+
+EX)
+class DeLorean extends TimeMachine
+
+
+//Let’s say TimeMachine has a method go with one parameter that gets logged out when the Time Machine is about to travel in time
+
+class TimeMachine
+  constructor: (@pilot) ->
+  go: (noise) ->
+    console.log noise
+
+class DeLorean extends TimeMachine
+class Tardis extends TimeMachine
+
+class DeLorean
+  go: ->
+    super "Buuuuuuuuurrrr"
+
+class Tardis
+  go: ->
+    super "vorp vorp"
+
+
+doctors_wife = new Tardis "The Doctor"
+doc_browns_wheels = new DeLorean "Marty"
+
+doctors_wife.go()
+doc_browns_wheels.go()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
