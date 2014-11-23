@@ -28,6 +28,43 @@ ASYNC WATERFALL
 
 *JavaScript
 
+ARGUMENTS - 
+1) tasks - An array of functions to run, where each function is passed a callback(err, result1, result2, ...) it must call on completion. The first argument is an error (which can be null if there are no errors) and any further arguments will be passed as arguments in order to the next task.
+2) callback(err,[results]) is an optional callback to run once all of the functions have completed. This will be passed the results of the last tasks callback.
+
+async.waterfall([
+  function(callback){
+    callback(null, 'one', 'two');
+  },
+  function(arg1, arg2, callback){
+    // arg1 now equals 'one' and arg2 now equals 'two'
+    callback(null, 'three');
+  },
+  function(arg1, callback){
+    //arg1 now equals 'three'
+    callback(null, 'done');
+  }
+], function(err, result){
+  //result now equals 'done'
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Another JavaScript example for reference
+
 var create = function(req, res) {
   async.waterfall([
     _function1(req),
