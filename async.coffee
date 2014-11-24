@@ -38,3 +38,51 @@ async.waterfall [
     callback null, "done"
 ], (err, result) ->
   console.log result
+
+#-----------------------------------------------------------------------------------------
+
+new_series = "ASYNC SERIES"
+async = require('async')
+
+#Works the same as a waterfall, where a series of functions are ran, passing their arguments to callbacks or returning an error. The difference is that a series will take an array or an object while a waterfall will only take an array AND IT PRESERVES ORDER!!!
+
+async.series [
+  (callback) ->
+    console.log "First function called"
+    callback null, 'one'
+  (callback) ->
+    console.log "Second function called"
+    callback null, 'two'
+],
+  (err, results) ->
+    console.log "error" if err
+    console.log results #should be ['one', 'two']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
