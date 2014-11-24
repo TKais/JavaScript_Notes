@@ -136,8 +136,30 @@ async.series([
 //Basically, run all the tasks in the array and then print out either an error or the results
 
 
+EX WITH OBJECTS)
+
+async.series({
+  one: function(callback){
+    setTimeout(function(){
+      callback(null, 1)
+    }, 200);
+  },
+  two: function(callback){
+    setTimeout(function(){
+      callback(null, 2);
+    }, 100);
+  }
+},
+function(err, results){
+  if(err){
+    console.log('Error');
+  } else {
+    console.log(results);
+  }
+});
 
 
+-----------------------------------------------------------------------------------------
 
 
 

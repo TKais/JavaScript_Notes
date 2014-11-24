@@ -61,7 +61,29 @@ async.series [
 #Basically, run all the tasks in the array, then print out either an error or the results
 
 
+#EX with objects
+async = require('async')
 
+async.series
+  one: (callback) ->
+    setTimeout (->
+      callback null, 1
+      return
+    ), 200
+    return
+
+  two: (callback) ->
+    setTimeout (->
+      callback null, 2
+      return
+    ), 100
+    return
+, (err, results) ->
+  if err
+    console.log "Error"
+  else
+    console.log results
+  return
 
 
 

@@ -37,3 +37,24 @@ async.series([
   }
   return console.log(results);
 });
+
+async = require('async');
+
+async.series({
+  one: function(callback) {
+    setTimeout((function() {
+      callback(null, 1);
+    }), 200);
+  },
+  two: function(callback) {
+    setTimeout((function() {
+      callback(null, 2);
+    }), 100);
+  }
+}, function(err, results) {
+  if (err) {
+    console.log("Error");
+  } else {
+    console.log(results);
+  }
+});
