@@ -108,7 +108,7 @@ function _function3(something, callback){
 ASYNC SERIES (tasks, [callback])
 
 
-*Works the same as a waterfall, where a series of functions are ran, passing their arguments to callbacks or returning an error. The difference is that a series will take an array or an object while a waterfall will only take an array (use an array if you care about order).
+*Works the same as a waterfall, where a series of functions are ran, passing their arguments to callbacks or returning an error. The difference is that a series will take an array or an object while a waterfall will only take an array AND IT PRESERVES ORDER!!!
 
 
 *JavaScript
