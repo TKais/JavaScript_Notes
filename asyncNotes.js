@@ -133,8 +133,7 @@ async.series([
     console.log(results); //equal to ['one', 'two']
    })
 
-
-
+//Basically, run all the tasks in the array and then print out either an error or the results
 
 
 

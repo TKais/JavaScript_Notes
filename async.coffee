@@ -58,6 +58,7 @@ async.series [
     console.log "error" if err
     console.log results #should be ['one', 'two']
 
+#Basically, run all the tasks in the array, then print out either an error or the results
 
 
 
