@@ -20,7 +20,7 @@ doSomethingOnceAllAreDone();
 
 -----------------------------------------------------------------------------------------
 
-ASYNC WATERFALL
+ASYNC WATERFALL (tasks, [callback])
 
 
 *Runs an array of functions in series, each passing their results to the next in the array. However, if any of the functions pass an error to the callback, the next function is not executed and the main callback is immediately called with the error.
@@ -104,6 +104,11 @@ function _function3(something, callback){
 
 
 -----------------------------------------------------------------------------------------
+
+ASYNC SERIES (tasks, [callback])
+
+
+*
 
 
 
