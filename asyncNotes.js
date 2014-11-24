@@ -108,7 +108,31 @@ function _function3(something, callback){
 ASYNC SERIES (tasks, [callback])
 
 
-*
+*Works the same as a waterfall, where a series of functions are ran, passing their arguments to callbacks or returning an error. The difference is that a series will take an array or an object while a waterfall will only take an array (use an array if you care about order).
+
+
+*JavaScript
+
+ARGUMENTS - 
+1) tasks - An array or object containing functions to run, each function is passed a callback(err, result) it must call on completion with an error err (which can be null) and an optional result value.
+2) callback(err, results) - An optional callback to run once all the functions have completed. This function gets a results array (or object) containing all the result arguments passed to the task callbacks.
+
+async.series([
+  function(callback){
+    console.log('First function call');
+    callback(null, 'one'); //null is the error, 'one' is the first argument
+  },
+  function(callback){
+    console.log('Second function call');
+    callback(null, 'two'); //null is the error, 'two' is the second argument
+  }
+
+],
+// optional callback
+   function(err, results){
+    console.log(results); //equal to ['one', 'two']
+   })
+
 
 
 
