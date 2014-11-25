@@ -161,6 +161,17 @@ function(err, results){
 
 -----------------------------------------------------------------------------------------
 
+ASYNC PARALLEL (tasks, [callback])
+
+
+
+*Run the tasks array of functions in parallel, without waiting until the previous function has completed. If any of the functions pass an error to its callback, the main callback is immediately called with the value of the error. Once the tasks have completed, the results are passed to the final callback as an array. It is also possible to use an object instead of an array. Each property will be run as a function and the results will be passed to the final callback as an object instead of an array. This can be a more readable way of handling results from parallel.
+
+
+
+
+
+
 
 
 
