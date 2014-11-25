@@ -191,7 +191,7 @@ async.parallel([
 function(err, results){
   if(err){
     console.log("Error");
-  else
+  } else {
     console.log(results);
   }
 });

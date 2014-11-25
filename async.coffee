@@ -85,7 +85,31 @@ async.series
     console.log results
   return
 
+#-----------------------------------------------------------------------------------------
 
+new_parallel = "ASYNC PARALLEL"
+
+
+async = require('async')
+
+
+async.parallel [
+  (callback) ->
+    setTimeout (->
+      callback null, "one"
+      return
+    ), 200
+  (callback) ->
+    setTimeout (->
+      callback null, "two"
+      return
+    ), 100
+], (err, results) ->
+  if err
+    console.log "Error"
+  else
+    console.log results
+  return
 
 
 
