@@ -192,7 +192,7 @@ function(err, results){
   if(err){
     console.log("Error");
   } else {
-    console.log(results);
+    console.log(results); //returns ['one', 'two']  even though 'two' has a shorter timeout
   }
 });
 

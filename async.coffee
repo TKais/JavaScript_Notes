@@ -108,8 +108,35 @@ async.parallel [
   if err
     console.log "Error"
   else
-    console.log results
+    console.log results  #['one', 'two']
   return
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
