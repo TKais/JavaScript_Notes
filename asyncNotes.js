@@ -19,7 +19,7 @@ items.forEach(functiion(item){
 doSomethingOnceAllAreDone();
 
 
-NOTE: The async methods take an array of functions to run, and as long as there are no errors (they return null) the results of each function are pushed into an array and returned at the end.
+NOTE: The async methods take an array of functions to run, and as long as there are no errors (they return null) the results of each function are pushed into an array and returned at the end. But with async.waterfall, you only get the last functions return.
 
 -----------------------------------------------------------------------------------------
 
