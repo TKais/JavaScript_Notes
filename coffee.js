@@ -850,9 +850,26 @@ doc_browns_wheels = new DeLorean "Marty"
 doctors_wife.go()
 doc_browns_wheels.go()
 
+//-----------------------------------------------------------------------------
+
+//CONSTRUCTOR
+function Car() {
+    this.wheels = wheels;
+    this.make = make;
+    this.model = model;
+}
+
+//TRANSLATES TO
+
+Car = ->
+  @wheels = wheels
+  @make = make
+  @model = model
+  return
 
 
 
+//OBLECT LITERAL
 
 
 
