@@ -869,12 +869,25 @@ Car = ->
 
 
 
+
 //OBLECT LITERAL
 
+var Car = {
+    wheels: 4,
+    make: Escape,
+    model: Ford
+};
+
+//TRANSLATES TO
+
+Car =
+  wheels: 4
+  make: Escape
+  model: Ford
 
 
-
-
+IMPORTANT------
+Constructors are used to make other instances of itself while object literals are not meant to do that. Theyre just objects in use for a particular purpose. Also, constructors use prototypical inheritence. 
 
 
 
