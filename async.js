@@ -100,3 +100,21 @@ async.waterfall([
   }
   return console.log(results);
 });
+
+async.waterfall([
+  function(cb) {
+    console.log("First one");
+    return cb(null, 'one');
+  }, function(arg1, cb) {
+    console.log(arg1);
+    return cb(null, 'two');
+  }, function(arg2, cb) {
+    console.log(arg2);
+    return cb(null, 'three');
+  }
+], function(err, results) {
+  if (err) {
+    console.log("Error");
+  }
+  return console.log(results);
+});

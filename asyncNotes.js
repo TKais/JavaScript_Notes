@@ -27,6 +27,8 @@ ASYNC WATERFALL (tasks, [callback])
 
 
 *Runs an array of functions in series, each passing their results to the next in the array. However, if any of the functions pass an error to the callback, the next function is not executed and the main callback is immediately called with the error.
+*They need to have placeholders in each function argument for the previous functions result. Only the last functions result is returned. 
+*Must have exact number of arguments 
 
 
 *JavaScript

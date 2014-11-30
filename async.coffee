@@ -142,6 +142,26 @@ async.waterfall [
 
 
 
+async.waterfall [
+  (cb) ->
+    console.log "First one"
+    cb null, 'one'
+  (arg1, cb) ->
+    console.log arg1 #one
+    cb null, 'two'
+  (arg2, cb) ->
+    console.log arg2 #two
+    cb null, 'three'
+], 
+  (err, results) ->
+    console.log "Error" if err
+    console.log results #three
+
+#Returns: 
+# First one
+# one
+# two
+# three
 
 
 
