@@ -111,10 +111,34 @@ async.parallel [
     console.log results  #['one', 'two']
   return
 
+#-----------------------------------------------------------------------------------------
+
+#PRACTICE
 
 
+async = require('async')
 
 
+async.waterfall [
+  (cb) ->
+    console.log "First one"
+    cb null, 'one'
+  (arg1, cb) ->
+    console.log "Second one"
+    cb null, 'two'
+  (arg2, cb) ->
+    console.log "Third one"
+    cb null, 'three'
+], 
+  (err, results) ->
+    console.log "Error" if err
+    console.log results
+
+#Returns: 
+# First one
+# Second one
+# Third one
+# three
 
 
 
