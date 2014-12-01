@@ -189,9 +189,23 @@ async.series [
 
 
 
-
-
-
+async.parallel [
+  (callback) ->
+    setTimeout (->
+      callback null, "one"
+      return
+    ), 5000
+  (callback) ->
+    setTimeout (->
+      callback null, "two"
+      return
+    ), 100
+], (err, results) ->
+  if err
+    console.log "Error"
+  else
+    console.log results  #['one', 'two']
+  return
 
 
 

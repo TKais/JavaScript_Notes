@@ -136,3 +136,21 @@ async.series([
   }
   return console.log(results);
 });
+
+async.parallel([
+  function(callback) {
+    return setTimeout((function() {
+      callback(null, "one");
+    }), 5000);
+  }, function(callback) {
+    return setTimeout((function() {
+      callback(null, "two");
+    }), 100);
+  }
+], function(err, results) {
+  if (err) {
+    console.log("Error");
+  } else {
+    console.log(results);
+  }
+});
