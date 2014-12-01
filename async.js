@@ -118,3 +118,21 @@ async.waterfall([
   }
   return console.log(results);
 });
+
+async.series([
+  function(cb) {
+    console.log("First one");
+    return cb(null, 'one');
+  }, function(cb) {
+    console.log("Second one");
+    return cb(null, 'two');
+  }, function(cb) {
+    console.log("Third one");
+    return cb(null, 'three');
+  }
+], function(err, results) {
+  if (err) {
+    console.log("Error");
+  }
+  return console.log(results);
+});

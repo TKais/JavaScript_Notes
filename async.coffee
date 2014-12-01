@@ -166,8 +166,26 @@ async.waterfall [
 
 
 
+async.series [
+  (cb) ->
+    console.log "First one"
+    cb null, 'one'
+  (cb) ->
+    console.log "Second one"
+    cb null, 'two'
+  (cb) ->
+    console.log "Third one"
+    cb null, 'three'
+], 
+  (err, results) ->
+    console.log "Error" if err
+    console.log results
 
-
+#Returns: 
+# First one
+# Second one
+# Third one
+# ['one', 'two', 'three']
 
 
 

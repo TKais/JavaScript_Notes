@@ -27,8 +27,8 @@ ASYNC WATERFALL (tasks, [callback])
 
 
 *Runs an array of functions in series, each passing their results to the next in the array. However, if any of the functions pass an error to the callback, the next function is not executed and the main callback is immediately called with the error.
-*They need to have placeholders in each function argument for the previous functions result. Only the last functions result is returned. 
-*Must have exact number of arguments 
+*They need to have placeholders in each function argument for the previous functions result. Only the last functions result is returned (not as an array).
+*Must have exact number of arguments for each cb function. 
 
 
 *JavaScript
@@ -114,6 +114,7 @@ ASYNC SERIES (tasks, [callback])
 
 
 *Works the same as a waterfall, where a series of functions are ran, passing their arguments to callbacks or returning an error. The difference is that a series will take an array or an object while a waterfall will only take an array AND IT PRESERVES ORDER!!!
+*Pushes ALL results into an array in order. 
 
 
 *JavaScript
@@ -171,6 +172,7 @@ ASYNC PARALLEL (tasks, [callback])
 
 
 *Run the tasks array of functions in parallel, without waiting until the previous function has completed. If any of the functions pass an error to its callback, the main callback is immediately called with the value of the error. Once the tasks have completed, the results are passed to the final callback as an array. It is also possible to use an object instead of an array. Each property will be run as a function and the results will be passed to the final callback as an object instead of an array. This can be a more readable way of handling results from parallel.
+*All results will be pushed into an array in order 
 
 
 *JavaScript
