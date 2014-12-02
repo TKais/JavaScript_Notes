@@ -890,11 +890,18 @@ IMPORTANT------
 Constructors are used to make other instances of itself while object literals are not meant to do that. Theyre just objects in use for a particular purpose. Also, constructors use prototypical inheritence. 
 
 
+//REGULAR FUNCTION 
 
+function addTwoNumbers(num1, num2){
+  if(typeof num1 === "number" && typeof num2 === "number"){
+    return num1 + num2;
+  }
+};
 
+//TRANSLATES TO
 
-
-
+addTwoNumbers = (num1, num2) ->
+  num1 + num2 if typeof num1 is "number" and typeof num2 is "number" 
 
 
 
