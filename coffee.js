@@ -904,6 +904,20 @@ addTwoNumbers = (num1, num2) ->
   num1 + num2 if typeof num1 is "number" and typeof num2 is "number" 
 
 
+//CLOSURES
+
+var add = (function() {
+    var counter = 0;
+    return function() {return counter += 1;}
+})();
+
+//TRANSLATES TO
+
+add = (->
+  counter = 0
+  ->
+    counter += 1
+)()
 
 
 
