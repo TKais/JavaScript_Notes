@@ -920,6 +920,19 @@ add = (->
 )()
 
 
+//USING 'THIS'
+function Car() {
+    this.wheels = wheels;
+    this.make = make;
+}
+
+//TRANSLATES TO 
+Car = ->
+  @wheels = wheels
+  @make = make
+  return
+
+
 
 
 
