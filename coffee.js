@@ -920,6 +920,8 @@ add = (->
 )()
 
 
+
+
 //USING 'THIS'
 function Car() {
     this.wheels = wheels;
@@ -933,6 +935,19 @@ Car = ->
   return
 
 
+
+
+//Prototypes
+Car.prototype.drive = function(){
+    var speed = 0;
+    speed += 60;
+}
+
+//TRANSLATES TO
+Car::drive = ->
+  speed = 0
+  speed += 60
+  return
 
 
 
