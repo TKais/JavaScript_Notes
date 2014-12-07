@@ -952,6 +952,43 @@ Car::drive = ->
 
 
 
+//WHOLE CONSTRUCTOR SETUP WITH PROTOTYPICAL INHERITENCE
+function Car(){
+    this.make = make;
+    this.model = model;
+}
+
+
+Car.prototype.drive = function(){
+    var speed = 0;
+    speed += 60;
+    console.log("I am driving " + speed + " miles per hour");
+}
+
+var ford = new Car();
+ford.make = "Ford";
+ford.model = "Escape";
+ford.drive();
+
+//TRANSLATES TO
+Car = ->
+  @make = make
+  @model = model
+  return
+Car::drive = ->
+  speed = 0
+  speed += 60
+  console.log "I am driving " + speed + " miles per hour"
+  return
+
+ford = new Car()
+ford.make = "Ford"
+ford.model = "Escape"
+ford.drive()
+
+
+
+
 
 
 
