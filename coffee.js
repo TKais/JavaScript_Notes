@@ -988,6 +988,38 @@ ford.drive()
 
 
 
+//ANOTHER WAY OF THE SAME ^
+function Car(make, model){
+    this.make = make;
+    this.model = model;
+}
+
+
+Car.prototype.drive = function(){
+    var speed = 20;
+    console.log("I am driving " + speed + " miles per hour");
+}
+
+var ford = new Car("Ford", "Escape");
+ford.make = "Ford";
+ford.model = "Escape";
+ford.drive();
+
+//TRANSLATES TO
+Car = (make, model) ->
+  @make = make
+  @model = model
+  return
+Car::drive = ->
+  speed = 20
+  console.log "I am driving " + speed + " miles per hour"
+  return
+
+ford = new Car("Ford", "Escape")
+ford.make = "Ford"
+ford.model = "Escape"
+ford.drive()
+
 
 
 
