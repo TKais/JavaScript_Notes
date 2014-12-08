@@ -13,4 +13,4 @@
 1) Holds $(document).ready() object and function to load the JS to the document. Inside of this should be:
     1) variables to represent model, view and controller objects (EX, var view = new View(), var controller = new Controller() and var model = new Model())
     2) controller.bindListeners() to load the controllers actions (these attach the view variables (representatives of the html classes or IDs) to the controllers methods)
-2) Each controller method should have an action that interacts with the model and another that interacts with the view. It switches between them.
+2) Each controller method should have an action that interacts with the model and another that interacts with the view. It switches between them. Use one model method against one view method.
