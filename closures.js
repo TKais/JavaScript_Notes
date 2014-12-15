@@ -173,3 +173,14 @@ counting();           //1
 counting();           //2
 counting();           //3
 
+
+//NO
+function increment(){
+    var num = 0;
+    function another(){
+      num + 1;
+      console.log(num);
+    }
+    return another;
+}      //0 undefined
+
