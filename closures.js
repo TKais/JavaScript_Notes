@@ -152,3 +152,24 @@ CAN DO THESE THINGS TO IMMEDIATELY INVOKE A FUNCTION:
 CANNOT DO:
 1) function test() {console.log("HEY"}(); //declaration
 
+------------------------------------------------------------------------------------------
+
+PLAYING AROUND WITH examples
+
+
+1) Increment
+
+function increment(){     //declare initial function
+    var num = 0;          //set counter to 0
+    function another(){   //declare closure function
+      num = num + 1;      //redefine num to increment
+      return num;         //make sure you return the result
+    }
+    return another;       //return closure function
+}
+
+var counting = increment();     //put whole function into variable because it references the inner function another()
+counting();           //1
+counting();           //2
+counting();           //3
+
