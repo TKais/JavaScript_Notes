@@ -1,3 +1,5 @@
+//CALLBACKS
+
 function greeting(callback){
   var name = "Bob";
   console.log("Hey there, " + name);
@@ -13,6 +15,7 @@ function getAge(name){
 greeting(getAge);
 
 // /////////////////////////////////////////////////////////////////
+//CONSTRUCTOR FUNCTION WITH PROTOTYPE INHERITENCE
 
 function Car(make, model){
   this.make = make;
@@ -41,6 +44,7 @@ escape.drive();    //Not so eco-friendly
 
 
 ////////////////////////////////////////////////////////////////////////////////
+//USING CALLBACKS AND A CLOSURE
 
 
 function likeMe(callback){
@@ -80,7 +84,7 @@ likeMe(loveMe);
 
 
 ////////////////////////////////////////////////////////////////////////////////////
-
+//USING TYPEOF TO UNDERSTAND DATA TYPES
 
 
 function practice(thing){
@@ -112,8 +116,6 @@ practice(function(){});  //function
 
 
 //////////////////////////////////////////////////////////////////////////////////////////
-
-
 //IFFE
 
 
@@ -129,15 +131,6 @@ practice();    //Hey there Tiff
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
-function practice(){
-  var name = "Tiff";
-  function(){
-    console.log("Hey there " + name);
-  }
-}
-
-
-practice();
 
 
 
