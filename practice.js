@@ -148,8 +148,8 @@ function readEmail(callback) {
 }
 
 function checkDashes() {
-  for(i = 0; i < variables.length; i++){
-    for(x in splitEmailText){
+  for(i = 0; i < variables.length; i++){                  //loop through variables in array
+    for(x in splitEmailText){                             //loop through words in email
       if(variables[i] === splitEmailText[x]){
         console.log(variables[i]);
       } else {
