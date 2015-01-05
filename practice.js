@@ -150,10 +150,10 @@ function readEmail(callback) {
 function checkDashes() {
   for(i = 0; i < variables.length; i++){                  //loop through variables in array
     for(x in splitEmailText){                             //loop through words in email
-      if(variables[i] === splitEmailText[x]){
+      if(variables[i] === splitEmailText[x]){            //if any of the variables are found in the email
         console.log(variables[i]);
       } else {
-        console.log(splitEmailText[x]);
+        console.log(splitEmailText[x]);                 //else just leave the email text alone
       }
     }
   }
