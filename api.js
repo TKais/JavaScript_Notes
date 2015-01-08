@@ -1,4 +1,4 @@
-BASIC API REQUEST AND RESPONSE CYCLE 
+BASIC API REQUEST 
 
 var xhr = new XMLHttpRequest();                            //create a variable that holds the new request object
 xhr.open("GET", "http://www.codecademy.com/", false);      //open with a 'get' status to codeacademy site
@@ -24,3 +24,21 @@ FOUR HTTP VERBS FOR RESTFUL ROUTING:
   2. POST      = 'post' or submit information to an API
   3. PUT       = change an already-existing value
   4. DELETE    = delete a value 
+
+
+An HTTP Response is made up of:
+  1. The response line (includes the three-digit HTTP status code)
+  2. The header (includes further information about the server and its response)
+  3. The body (contains actual response)
+
+
+BASIC API REQUEST/RESPONSE CYCLE (XML)
+
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "http://www.codecademy.com/files/samples/javascript_learn_apis.xml", false);
+
+xhr.setRequestHeader('Content-Type', 'text/xml');
+xhr.send();
+
+xmlDocument = xhr.responseXML;
+console.log(xmlDocument.childNodes['0'].textContent);
