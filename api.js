@@ -17,3 +17,10 @@ An HTTP Request is made up of:
 
 ENDPOINTS = API-defined locations where particular data are stored. 
      EX) Just as youll GET a pair of pants from PantsWorld or youll GET a bag of peanuts from PeanutHut, youll GET something different depending on the endpoint you use
+
+
+FOUR HTTP VERBS FOR RESTFUL ROUTING:
+  1. GET       = 'get' information from an API
+  2. POST      = 'post' or submit information to an API
+  3. PUT       = change an already-existing value
+  4. DELETE    = delete a value 
