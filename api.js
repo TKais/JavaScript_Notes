@@ -42,3 +42,13 @@ xhr.send();
 
 xmlDocument = xhr.responseXML;
 console.log(xmlDocument.childNodes['0'].textContent);
+
+
+
+BASIC API REQUEST/RESPONSE CYCLE (JSON)
+
+var demo = '{"pets": { "name": "Jeffrey", "species": "Giraffe"}}';   //a JSON object (example of a response)
+
+var json = JSON.parse(demo);     //parse the object 
+console.log(json);              //show it
+
