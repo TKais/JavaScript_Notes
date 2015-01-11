@@ -53,5 +53,11 @@ var json = JSON.parse(demo);     //parse the object
 console.log(json);              //show it
 
 
-*JSON looks like JavaScript objects while XML is made up of tags. Check an APIs documentation to know which it uses.
+*JSON looks like JavaScript objects while XML is made up of tags. Check an APIs documentation to know which it uses. 
+
+
+EXAMPLE OF AN API USING RUBY:
+
+
+
 
