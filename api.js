@@ -60,4 +60,10 @@ EXAMPLE OF AN API USING RUBY:
 
 
 
+REQUEST/RESPONSE IMAGE:
+
+CLIENT ---request---> PROXY (CACHE) ---request---> SERVER
+SERVER ---response---> PROXY (CACHE) ---response---> CLIENT  
+
+
 
