@@ -5,7 +5,7 @@ After downloading and unzipping, open SpecRunner.html in the browser and change 
 
 DESCRIBE:
 
-describe takes two parameters: a string and a function. The string is the name of what is being tested, and the function implements the suite. 
+The beginning of a test suite. Describe takes two parameters: a string and a function. The string is the name of what is being tested, and the function implements the suite. 
 
 EX)  
 describe('A suite', function(){
@@ -13,3 +13,9 @@ describe('A suite', function(){
     expect(true).toBe(true);
   });
 });
+
+
+
+IT:
+
+Defines the actual specs of a test. Also takes two parameters: a string and a function. The string is the title of the spec and the function is the actual spec/test.  
