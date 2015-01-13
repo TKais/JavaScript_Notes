@@ -49,7 +49,7 @@ BASIC API REQUEST/RESPONSE CYCLE (JSON)
 
 var demo = '{"pets": { "name": "Jeffrey", "species": "Giraffe"}}';   //a JSON object (example of a response)
 
-var json = JSON.parse(demo);     //parse the object 
+var json = JSON.parse(demo);     //parse the object (meaning make it strings instead of an object)
 console.log(json);              //show it
 
 
