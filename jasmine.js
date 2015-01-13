@@ -33,11 +33,21 @@ MATCHERS:
 Implements a boolean comparison between the actual value and the expected value. 
 
 Some included matchers:
-1 - expect(true).toBe(true)
-2 - expect(false).not.toBe(true);
-3 - var a = 12;
+1 - it("and has a positive case", function() {
+    expect(true).toBe(true);
+  });
+2 - it("and can have a negative case", function() {
+    expect(false).not.toBe(true);
+  });
+});
+3 - describe("The 'toEqual' matcher", function() {
+
+    it("works for simple literals and variables", function() {
+      var a = 12;
       expect(a).toEqual(12);
-4 - var foo = {
+    });
+4 - it("should work for objects", function() {
+      var foo = {
         a: 12,
         b: 34
       };
@@ -46,47 +56,72 @@ Some included matchers:
         b: 34
       };
       expect(foo).toEqual(bar);
-5 - expect(message).toMatch(/bar/);
-6 - var a = {
+    });
+  });
+5 - it("The 'toMatch' matcher is for regular expressions", function() {
+    var message = "foo bar baz";
+
+    expect(message).toMatch(/bar/);
+    expect(message).toMatch("bar");
+    expect(message).not.toMatch(/quux/);
+  });
+6 - it("The 'toBeDefined' matcher compares against `undefined`", function() {
+    var a = {
       foo: "foo"
     };
 
     expect(a.foo).toBeDefined();
     expect(a.bar).not.toBeDefined();
-7 - var a = null;
-    var foo = "foo";
+  });
+7 - it("The `toBeUndefined` matcher compares against `undefined`", function() {
+    var a = {
+      foo: "foo"
+    };
 
-    expect(null).toBeNull();
-    expect(a).toBeNull();
-    expect(foo).not.toBeNull();
-8 - var a, foo = "foo";
+    expect(a.foo).not.toBeUndefined();
+    expect(a.bar).toBeUndefined();
+  });
+8 - it("The 'toBeTruthy' matcher is for boolean casting testing", function() {
+    var a, foo = "foo";
 
     expect(foo).toBeTruthy();
     expect(a).not.toBeTruthy();
-9 - var a, foo = "foo";
+  });
+9 - it("The 'toBeFalsy' matcher is for boolean casting testing", function() {
+    var a, foo = "foo";
 
     expect(a).toBeFalsy();
     expect(foo).not.toBeFalsy();
-10 - var a = ["foo", "bar", "baz"];
+  });
+10 - it("The 'toContain' matcher is for finding an item in an Array", function() {
+    var a = ["foo", "bar", "baz"];
 
     expect(a).toContain("bar");
     expect(a).not.toContain("quux");
-11 - var pi = 3.1415926,
+  });
+11 - it("The 'toBeLessThan' matcher is for mathematical comparisons", function() {
+    var pi = 3.1415926,
       e = 2.78;
 
     expect(e).toBeLessThan(pi);
     expect(pi).not.toBeLessThan(e);
-12 - var pi = 3.1415926,
+  });
+12 - it("The 'toBeGreaterThan' matcher is for mathematical comparisons", function() {
+    var pi = 3.1415926,
       e = 2.78;
 
     expect(pi).toBeGreaterThan(e);
     expect(e).not.toBeGreaterThan(pi);
-13 - var pi = 3.1415926,
+  });
+13 - it("The 'toBeCloseTo' matcher is for precision math comparison", function() {
+    var pi = 3.1415926,
       e = 2.78;
 
     expect(pi).not.toBeCloseTo(e, 2);
     expect(pi).toBeCloseTo(e, 0);
-14 - var foo = function() {
+  });
+14 - it("The 'toThrow' matcher is for testing if a function throws an exception", function() {
+    var foo = function() {
       return 1 + 2;
     };
     var bar = function() {
@@ -95,8 +130,8 @@ Some included matchers:
 
     expect(foo).not.toThrow();
     expect(bar).toThrow();
-
-
+  });
+});
 
 
 
