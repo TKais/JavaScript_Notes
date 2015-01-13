@@ -30,3 +30,5 @@ Take a value called the actual (actual value in the code) and chains it to the e
 
 MATCHERS:
 
+Implements a boolean comparison between the actual value and the expected value. 
+
