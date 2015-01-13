@@ -18,4 +18,15 @@ describe('A suite', function(){
 
 IT:
 
-Defines the actual specs of a test. Also takes two parameters: a string and a function. The string is the title of the spec and the function is the actual spec/test.  
+Defines the actual specs of a test. Also takes two parameters: a string and a function. The string is the title of the spec and the function is the actual spec/test. 
+
+
+
+EXPECTATIONS:
+
+Take a value called the actual (actual value in the code) and chains it to the expected value. 
+
+
+
+MATCHERS:
+
