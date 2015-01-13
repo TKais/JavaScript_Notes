@@ -135,6 +135,12 @@ Some included matchers:
 
 
 
+DISABLING A SUITE:
+
+Just add an 'x' before describe and it. EX) xdescribe and xit
+
+
+
 
 
 
