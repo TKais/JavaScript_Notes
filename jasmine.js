@@ -141,6 +141,38 @@ Just add an 'x' before describe and it. EX) xdescribe and xit
 
 
 
+BEFOREEACH AND AFTEREACH
+
+Made to keep the test suite dry 
+
+beforeEach = function called once before each spec in the describe is run
+afterEach = function called after each spec
+
+describe("A spec (with setup and tear-down)", function() {
+  var foo;
+
+  beforeEach(function() {
+    foo = 0;
+    foo += 1;
+  });
+
+  afterEach(function() {
+    foo = 0;
+  });
+
+  it("is just a function, so it can contain any code", function() {
+    expect(foo).toEqual(1);
+  });
+
+  it("can have more than one expectation", function() {
+    expect(foo).toEqual(1);
+    expect(true).toEqual(true);
+  });
+});
+
+
+
+
 
 
 
