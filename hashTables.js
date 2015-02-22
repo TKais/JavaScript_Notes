@@ -9,7 +9,7 @@ hashTable['key3'] = 3;
 console.log(hashTable); // { key1: 1, key2: 2, key3: 3 }
 
 
-//Show the values inside
+//Show the values inside a hash
 
 var hashTable = {};
 
@@ -19,9 +19,16 @@ hashTable['key3'] = 3;
 
 for(var x in hashTable){
   if(hashTable.hasOwnProperty(x)){ //use hasOwnProperty to filter out keys from Object.prototype
-    console.log('key is: ' + x + '. and the value is: ' + hashTable[x]);
+    console.log('key is: ' + x + ' and the value is: ' + hashTable[x]);
   }
 }
 
+//Show the values in an array
+var array = ['one', 'two', 'three'];
+ for(var x in array){
+  console.log('This is index: ' + x + ' and this is element ' + array[x]);
+ }
+
 
 //Cannot use the length() function with hash tables because it's not indexed like arrays
+
