@@ -32,3 +32,12 @@ var array = ['one', 'two', 'three'];
 
 //Cannot use the length() function with hash tables because it's not indexed like arrays
 
+hashTable.length; //undefined
+
+
+//MAKE IT SO WE CAN FIND THE LENGTH, LIKE A REAL HASH TABLE
+
+ //NOTE: In JavaScript, every non-scalar variable is an object. Okay, so what does this mean? Well, essentially, this means it has a constructor, methods and properties
+
+ 
+
