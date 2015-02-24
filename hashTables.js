@@ -39,5 +39,17 @@ hashTable.length; //undefined
 
  //NOTE: In JavaScript, every non-scalar variable is an object. Okay, so what does this mean? Well, essentially, this means it has a constructor, methods and properties
 
- 
+ //HASH TABLES DON'T EXIST IN JAVASCRIPT. We can use Object, Date, Array, etc. object types to simulate hash tables though (use the Object class, as it is the closest thing to a hash table)
 
+ //Think of hash tables like Objects, where key-value is property-value
+
+ function HashTable(obj){
+  this.length = 0;
+  this.items = {};
+  for(var p in obj){
+    if(obj.hasOwnProperty(p)){
+      this.items[p] = obj[p];
+      this.length++;
+    }
+  }
+ }
