@@ -65,3 +65,38 @@ hashTable.length; //undefined
  //UH OH...Why didn't it increment above? Because adding properties this way only checks in items -- not object in the original constructor
 
  //Add a new function to add a property
+
+ function HashTable(obj){
+  this.length = 0;
+  this.items = {};
+  for(var p in obj){
+    if(obj.hasOwnProperty(p)){
+      this.items[p] = obj[p];
+      this.length++;
+    }
+  }
+  this.setItem = function(key,value){
+    var previous = undefined;
+    if(this.items.hasOwnProperty(key)){
+      previous = this.items[key];
+    } else {
+      this.length++;
+    }
+    this.items[key] = value;
+  }
+ }
+
+
+var h = new HashTable({'name': 'tiff', 'age': 28, 'location': 'san francisco'});
+console.log(h.setItem('one', 1)); //undefined
+console.log(h); //HashTable {length: 4, items: Object, setItem: function}
+console.log(h.items); //Object {name: "tiff", age: 28, location: "san francisco", one: 1}
+console.log(h.length); //4
+
+
+
+
+
+
+
+
