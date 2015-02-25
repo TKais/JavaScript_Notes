@@ -76,13 +76,13 @@ hashTable.length; //undefined
     }
   }
   this.setItem = function(key,value){
-    var previous = undefined;
-    if(this.items.hasOwnProperty(key)){
-      previous = this.items[key];
+    var previous = undefined;   
+    if(this.items.hasOwnProperty(key)){   //checking to see if the key already exists
+      previous = this.items[key];         //if it does, don't create a new key, but change the value
     } else {
-      this.length++;
+      this.length++;                      //otherwise, increment the length because it's a new key
     }
-    this.items[key] = value;
+    this.items[key] = value;              //set the new key and value to the items hash
   }
  }
 
