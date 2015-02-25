@@ -53,3 +53,15 @@ hashTable.length; //undefined
     }
   }
  }
+
+ var h = new HashTable({'name': 'tiff', 'age': 28, 'location': 'san francisco'});
+
+ console.log(h); //HashTable {length: 3, items: Object}
+ console.log(h.items); //Object {name: "tiff", age: 28, location: "san francisco"}
+ h.items['sex'] = 'female'; //"female"
+ console.log(h.items);  //Object {name: "tiff", age: 28, location: "san francisco", sex: "female"}
+ console.log(h.length); //3
+
+ //UH OH...Why didn't it increment above? Because adding properties this way only checks in items -- not object in the original constructor
+
+ //Add a new function to add a property
