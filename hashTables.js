@@ -95,6 +95,30 @@ console.log(h.length); //4
 
 
 
+//WRITING MY OWN BY MYSELF WITHOUT PASSING IN AN OBJECT
+
+function HashTable(){
+  this.length = 0;
+  this.items = {};
+}
+
+HashTable.prototype.addItem = function(key, value){
+  this.items[key] = value;
+  this.length++;
+}
+
+
+var h = new HashTable();
+h.addItem('foo', 'bar');  
+console.log(h);           //{ length: 1, items: { foo: 'bar' } }
+console.log(h.items);     //{ foo: 'bar' }
+console.log(h.length);    //1
+h.addItem('tiff', 'kaiser');
+console.log(h.items);         //{ foo: 'bar', tiff: 'kaiser' }
+console.log(h.length);        //2
+h.addItem('shark', 'tank');
+console.log(h.items);        //{ foo: 'bar', tiff: 'kaiser', shark: 'tank' }
+console.log(h.length);       //3
 
 
 
