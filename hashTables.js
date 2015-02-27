@@ -112,6 +112,10 @@ HashTable.prototype.deleteItem = function(key){
   this.length -= 1;
 }
 
+HashTable.prototype.showItems = function(){
+  console.log(this.items);
+}
+
 
 var h = new HashTable();
 h.addItem('foo', 'bar');  
@@ -127,6 +131,7 @@ console.log(h.length);       //3
 h.deleteItem('foo');
 console.log(h.items);     //{ tiff: 'kaiser', shark: 'tank' }
 console.log(h.length);   //2
+console.log(h.showItems);
 
 
 
