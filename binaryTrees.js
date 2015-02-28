@@ -12,3 +12,28 @@ var node = {
 //NODES ARE ORDERED BASED ON THE VALUE THEY CONTAIN: any values that are part of a node’s left subtree are always less than the node’s value and any values in the right subtree are always greater than the node’s value
 
 //There can be no duplicates in a binary search tree
+
+function BinarySearchTree(){
+  this.root = null;
+}
+
+BinarySearchTree.prototype = {
+
+  add: function(value){
+  },
+
+  contains: function(value){
+  },
+
+  remove: function(value){
+  },
+
+  size: function(){
+  },
+
+  toArray: function(){
+  },
+
+  toString: function(){
+  }
+};
