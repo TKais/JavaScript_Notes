@@ -6,3 +6,7 @@ var node = {
   left: null,
   right: null
 }
+
+//Binary search trees are a hierarchical tree structure where the first node becomes the root node and each additional value is an ancestor of that root. 
+
+//NODES ARE ORDERED BASED ON THE VALUE THEY CONTAIN: any values that are part of a node’s left subtree are always less than the node’s value and any values in the right subtree are always greater than the node’s value
