@@ -23,6 +23,12 @@ BinarySearchTree.prototype = {
   },
 
   contains: function(value){
+    var found = false;
+    var current = this.root;
+
+    if(found){
+      
+    }
   },
 
   remove: function(value){
