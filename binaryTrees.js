@@ -26,8 +26,8 @@ BinarySearchTree.prototype = {
     var found = false;
     var current = this.root;
 
-    if(found){
-      
+    if(typeof current !== 'undefined' && found){
+      if()
     }
   },
 
