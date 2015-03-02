@@ -13,10 +13,10 @@ BinarySearchTree.prototype = {
                 value: value,
                 left: null,
                 right: null
-            },
+            }
 
             //used to traverse the structure
-            current;
+         var current; //undefined
 
         //special case: no items in the tree yet
         if (this._root === null){
