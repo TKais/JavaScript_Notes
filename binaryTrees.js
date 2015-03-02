@@ -23,12 +23,19 @@ BinarySearchTree.prototype = {
   },
 
   contains: function(value){
-    var found = false;
+    var found = false;    //returns true if the value passed in is present in the tree and false if not
     var current = this.root;
 
-    if(typeof current !== 'undefined' && found){
-      if()
-    }
+    if(typeof current !== 'undefined' && !found){
+      if(value < current.value){
+        current = current.left;
+      } else if(value > current.value){
+        current = current.right;
+      } else{
+        found = true;
+      }
+    } 
+    return found;
   },
 
   remove: function(value){
