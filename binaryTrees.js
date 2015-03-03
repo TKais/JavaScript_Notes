@@ -20,6 +20,13 @@ function BinarySearchTree(){
 BinarySearchTree.prototype = {
 
   add: function(value){
+    var node = {
+      value: value,
+      left: null, 
+      right: null
+    }
+
+    var current; //undefined, give it no value right off the bat 
   },
 
   contains: function(value){
