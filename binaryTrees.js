@@ -27,6 +27,14 @@ BinarySearchTree.prototype = {
     }
 
     var current; //undefined, give it no value right off the bat 
+
+    //if there is no root and nothing in the tree yet
+
+    if(this.root === null){
+      this.root = node;
+    } else {
+      current = this.root;
+    }
   },
 
   contains: function(value){
