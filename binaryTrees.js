@@ -34,6 +34,25 @@ BinarySearchTree.prototype = {
       this.root = node;
     } else {
       current = this.root;
+
+      while(true){
+        if(value < current.value){
+          if(current.left === null){
+            current.left = node;
+            break;
+          } else {
+            current = current.left; //resetting current to the node on the left
+          }
+        } else if(value>current.value){
+           if(current.right === null){
+            current.right = node;
+           } else {
+            current = current.right;
+           }
+        } else {
+          break;
+        }
+      }
     }
   },
 
