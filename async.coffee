@@ -280,6 +280,34 @@ async.waterfall [
 
 
 
+async = require('async')
+
+
+
+
+async.series [
+  (cb)->
+    console.log "First one"
+    hey = "Hey"
+    cb null, hey
+  (cb)->
+    console.log "Second one"
+    there = "there"
+    cb null, there
+  (cb)->
+    console.log "Third one"
+    name = "Tiff"
+    cb null, name
+  ], (err, results)->
+    cb err if err
+    console.log results
+
+
+
+# First one
+# Second one
+# Third one
+# [ 'Hey', 'there', 'Tiff' ]
 
 
 

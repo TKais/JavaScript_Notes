@@ -206,3 +206,29 @@ async.waterfall([
   }
   return console.log("FINAL RESULTS", results);
 });
+
+async = require('async');
+
+async.series([
+  function(cb) {
+    var hey;
+    console.log("First one");
+    hey = "Hey";
+    return cb(null, hey);
+  }, function(cb) {
+    var there;
+    console.log("Second one");
+    there = "there";
+    return cb(null, there);
+  }, function(cb) {
+    var name;
+    console.log("Third one");
+    name = "Tiff";
+    return cb(null, name);
+  }
+], function(err, results) {
+  if (err) {
+    cb(err);
+  }
+  return console.log(results);
+});
