@@ -154,3 +154,55 @@ async.parallel([
     console.log(results);
   }
 });
+
+async = require('async');
+
+async.parallel([
+  function(cb) {
+    var hey;
+    console.log("First one");
+    hey = "Hey";
+    return cb(null, hey);
+  }, function(cb) {
+    var there;
+    console.log("Second one");
+    there = "there";
+    return cb(null, there);
+  }, function(cb) {
+    var name;
+    console.log("Third one");
+    name = "Tiff";
+    return cb(null, name);
+  }
+], function(err, results) {
+  if (err) {
+    cb(err);
+  }
+  return console.log("FINAL RESULTS", results);
+});
+
+async = require('async');
+
+async.waterfall([
+  function(cb) {
+    var hey;
+    console.log("First one");
+    hey = "Hey";
+    return cb(null, hey);
+  }, function(arg, cb) {
+    var there;
+    console.log("Second one");
+    there = "there";
+    return cb(null, there);
+  }, function(arg, cb) {
+    var name;
+    console.log("Third one");
+    name = "Tiff";
+    return cb(null, name);
+  }
+], function(err, results) {
+  if (err) {
+    cb(err);
+  }
+  return console.log("FINAL RESULTS", results);
+});

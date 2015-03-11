@@ -208,17 +208,71 @@ async.parallel [
   return
 
 
+# ------------------------------------------------------------------------------------------------------------------
+
+
+#EXAMPLE
+
+
+async = require('async')
 
 
 
 
+async.parallel [
+  (cb)->
+    console.log "First one"
+    hey = "Hey"
+    cb null, hey
+  (cb)->
+    console.log "Second one"
+    there = "there"
+    cb null, there
+  (cb)->
+    console.log "Third one"
+    name = "Tiff"
+    cb null, name
+  ], (err, results)->
+    cb err if err
+    console.log "FINAL RESULTS", results
+
+
+#First one
+# Second one
+# Third one
+# FINAL RESULTS [ 'Hey', 'there', 'Tiff' ]
 
 
 
 
+async = require('async')
 
 
 
+
+async.waterfall [
+  (cb)->
+    console.log "First one"
+    hey = "Hey"
+    cb null, hey
+  (arg, cb)->
+    console.log "Second one"
+    there = "there"
+    cb null, there
+  (arg, cb)->
+    console.log "Third one"
+    name = "Tiff"
+    cb null, name
+  ], (err, results)->
+    cb err if err
+    console.log "FINAL RESULTS", results
+
+
+
+# First one
+# Second one
+# Third one
+# FINAL RESULTS Tiff
 
 
 
