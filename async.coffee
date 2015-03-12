@@ -312,9 +312,36 @@ async.series [
 
 
 
+PERFECT EXAMPLE OF WATERFALL AND HOW IT WORKS:
+
+
+async = require('async')
 
 
 
 
+async.waterfall [
+  (cb)->
+    console.log "First one"
+    hey = "Hey"
+    cb null, hey
+  (hey, cb)->
+    console.log "Second one"
+    there = hey + "there"
+    cb null, there
+  (there, cb)->
+    console.log "Third one"
+    name = there + "Tiff"
+    cb null, name
+  ], (err, results)->
+    cb err if err
+    console.log results
+
+
+
+# First one
+# Second one
+# Third one
+# HeythereTiff
 
 
